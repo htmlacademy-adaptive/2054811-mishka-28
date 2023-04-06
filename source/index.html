@@ -76,7 +76,7 @@
         <img src="" alt="" class="card__img">
         <span class="card__price-desc">Цена:</span>
         <span class="card__price"> 990 руб.</span>
-        <button class="button card__button">ЗАКАЗАТЬ</button>
+        <button class="button card__button button--primary">ЗАКАЗАТЬ</button>
       </div>
     </section>
     <section class="about">
@@ -147,38 +147,62 @@
         <p class="contact__address">г. Санкт-Петербургул. Большая Конюшеннаяд. 19/8, офис 101</p>
       </address>
       <div class="contact__map"></div>
-      <button class="contact__map__button button ">НАпишите нам</button>
+      <button class="contact__map__button button button--primary">Напишите нам</button>
     </section>
   </main>
   <footer class="footer">
-    <a href="./img/footer/logo-footer.svg" class="footer__logo">
-      <img src="" alt="" width="" height="">
-      <span class="visually-hidden">
-
-      </span>
-    </a>
-    <span class="visually-hidden">Логотип Магазина вязанных игрушек Мишка</span>
-    <ul class="social__list">
-      <li class="social__item">
-        <a href="#" class="social__link">
-          <span class="visually-hidden"> В контакте</span>
-        </a>
-      </li>
-      <li class="social__item"><a href="#" class="social__link">
-          <span class="visually-hidden">Ю туб</span>
-        </a>
-      </li>
-      <li class="social__item"><a href="#" class="social__link">
-          <span class="visually-hidden">Телеграмм</span>
-        </a>
-      </li>
-    </ul>
-    <div class="footer__develop">
-      <span class="develop__desc">Разработано</span>
-      <a href="https://htmlacademy.ru" class="develop__logo">
-        <img class="logo" src="./img/footer/htmlacademy.svg" alt="Логотип HTML Academy." width="27" height="34">
-        <span class="visually-hidden">Логотип HTML Academy</span>
+    <div class="footer__wrapper">
+      <a href="./img/footer/logo-footer.svg" class="footer__logo">
+        <img src="" alt="" width="" height="">
+        <span class="visually-hidden">
+        </span>
       </a>
+      <span class="visually-hidden">Логотип Магазина вязанных игрушек Мишка</span>
+      <ul class="social__list">
+        <li class="social__item">
+          <a href="#" class="social__link">
+            <span class="visually-hidden"> В контакте</span>
+          </a>
+        </li>
+        <li class="social__item"><a href="#" class="social__link">
+            <span class="visually-hidden">Ю туб</span>
+          </a>
+        </li>
+        <li class="social__item"><a href="#" class="social__link">
+            <span class="visually-hidden">Телеграмм</span>
+          </a>
+        </li>
+      </ul>
+      <div class="footer__develop">
+        <span class="develop__desc">Разработано</span>
+        <a href="https://htmlacademy.ru" class="develop__logo">
+          <img class="logo" src="./img/footer/htmlacademy.svg" alt="Логотип HTML Academy." width="27" height="34">
+          <span class="visually-hidden">Логотип HTML Academy</span>
+        </a>
+      </div>
+    </div>
+    <div class="modal__container">
+      <h2 class="modal__title title">Добавить в корзину</h2>
+      <form action="https://echo.htmlacademy.ru/" class="modal__filter" method="get">
+        <fieldset class="filter__group">
+          <legend class="filter__title">Размер</legend>
+          <ul class="filter__list">
+            <li class="filter__item">
+              <label for="s" class="filter__control">S </label>
+              <input class="control__input visually-hidden" type="checkbox" name="s" id="s">
+            </li>
+            <li class="filter__item">M</label>
+              <label for="m" class="filter__control">
+                <input class="control__input visually-hidden" type="checkbox" name="m" id="m">
+            </li>
+            <li class="filter__item">
+              <label for="l" class="filter__control">L</label>
+              <input class="control__input visually-hidden" type="checkbox" name="l" id="l">
+            </li>
+          </ul>
+        </fieldset>
+        <button class="button modal__button button--secondary">Добавить</button>
+      </form>
     </div>
 </body>
 
