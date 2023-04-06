@@ -11,7 +11,7 @@
 <body>
   <header class="header">
     <a class="header__logo header__logo--light">
-      <img src="./img/header/logo.svg" alt="Логотип мазагина игрушек-Мишка." class="logo" width="" height="">
+      <img src="./img/header/logo.svg" alt="Логотип мазагина игрушек-Мишка." class="logo" width="86" height="35">
     </a>
     <button class="nav__toggle" type="button">
       <span class="visually-hidden">Открыть меню</span>
@@ -74,27 +74,28 @@
           <ul class="filter__list color__list">
             <li class="filter__item">
               <label class="filter__control" for="white">Белый</label>
-              <input class="control__input visually-hidden control__input--checked" type="radio" name="" id="white">
+              <input class="control__input visually-hidden control__input--checked" type="radio" name="color"
+                id="white">
             </li>
             <li class="filter__item">
               <label class="filter__control" for="gray">Серый</label>
-              <input class="control__input visually-hidden control__input--checked" type="radio" name="" id="gray">
+              <input class="control__input visually-hidden control__input--checked" type="radio" name="color" id="gray">
             </li>
             <li class="filter__item">
               <label class="filter__control" for="tiffany">Тиффани</label>
-              <input class="control__input visually-hidden" type="radio" name="" id="tiffany">
+              <input class="control__input visually-hidden" type="radio" name="color" id="tiffany">
             </li>
             <li class="filter__item">
-              <label class="filter__control" for="">Черный</label>
-              <input class="control__input visually-hidden" type="radio" name="" id="black">
+              <label class="filter__control" for="black">Черный</label>
+              <input class="control__input visually-hidden" type="radio" name="color" id="black">
             </li>
             <li class="filter__item">
               <label class="filter__control" for="pink">Розовый</label>
-              <input class="control__input visually-hidden" type="radio" name="" id="pink">
+              <input class="control__input visually-hidden" type="radio" name="color" id="pink">
             </li>
             <li class="filter__item">
               <label class="filter__control" for="orange">Оранжевый</label>
-              <input class="control__input visually-hidden" type="radio" name="" id="orange">
+              <input class="control__input visually-hidden" type="radio" name="color" id="orange">
             </li>
           </ul>
         </legend>
@@ -118,7 +119,8 @@
 
       <fieldset class="filter__group">
         <legend class="filter__title">Доп</legend>
-        <textarea class="filter__textarea" name="textarea" id="" cols="30" rows="10"
+        <label class="filter__control" for="textarea"></label>
+        <textarea class="filter__textarea" name="textarea" id="textarea" cols="30" rows="10"
           placeholder="Опишите все ваши пожелания к заказу">
         </textarea>
       </fieldset>
@@ -130,8 +132,8 @@
   </main>
   <footer class="footer">
     <div class="footer__wrapper">
-      <a href="./img/footer/logo-footer.svg" class="footer__logo">
-        <img src="" alt="" width="" height="">
+      <a href="./img/footer/logo-footer.svg" class="footer__logo footer__logo--hidden">
+        <img src="./img/footer/logo-footer.svg" alt="Логотип магазина Мишка." width="102" height="34">
         <span class="visually-hidden">
         </span>
       </a>
@@ -170,9 +172,9 @@
             <label for="s" class="filter__control">S </label>
             <input class="control__input visually-hidden" type="checkbox" name="s" id="s">
           </li>
-          <li class="filter__item">M</label>
-            <label for="m" class="filter__control">
-              <input class="control__input visually-hidden" type="checkbox" name="m" id="m">
+          <li class="filter__item">
+            <label for="m" class="filter__control">M</label>
+            <input class="control__input visually-hidden" type="checkbox" name="m" id="m">
           </li>
           <li class="filter__item">
             <label for="l" class="filter__control">L</label>
