@@ -1,0 +1,39 @@
+
+.review__slider-list {
+  margin-bottom: 38px;
+}
+
+.review__sliders {
+  border: none;
+  padding: 13px;
+  background-color: transparent;
+}
+.review__sliders--next {
+  svg {
+    transform: rotate(180deg);
+  }
+}
+
+.review__button-wrapper {
+  background: #ffffff;
+  mix-blend-mode: normal;
+  border: 1px solid #ececec;
+  margin-bottom: 38px;
+}
+
+.review__button {
+  margin-bottom: 89px;
+  position: relative;
+}
+
+.review__button::after {
+  content: "";
+  background-image: url("../../img/product/zigzag.svg");
+  width: 320px;
+  height: 6px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
+
+}

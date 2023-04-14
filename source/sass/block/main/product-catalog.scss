@@ -1,0 +1,33 @@
+.product-catalog__title {
+  margin-bottom: 18px;
+}
+
+.product-catalog__description-text {
+  margin-bottom: 28px;
+}
+
+.product-catalog__measuare {
+  margin-bottom: 41px;
+}
+
+.product-catalog__price-description {
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.product-catalog__button {
+  position: relative;
+}
+
+.product-catalog__button::after {
+  content: "";
+  background-image: url("../../img/product/zigzag.svg");
+  height: 6px;
+  width: 320px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}

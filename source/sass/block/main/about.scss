@@ -1,0 +1,67 @@
+
+.about__title {
+  margin-bottom: 82px;
+}
+
+.about__item {
+  position: relative;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 20px;
+  color: #000000;
+  margin-bottom: 83px;
+}
+
+.about__item::before {
+  position: absolute;
+  content: "";
+}
+
+.about__item--eco::before {
+  background-image: url("../../img/about/eco.svg");
+  width: 33px;
+  height: 38px;
+  top: -40px;
+  left: 0;
+}
+
+.about__item--scand::before {
+  background-image: url("../../img/about/scand.svg");
+  width: 47px;
+  height: 27px;
+  top: -40px;
+  left: 0;
+}
+
+.about__item--like::before {
+  background-image: url("../../img/about/like.svg");
+  width: 34px;
+  height: 27px;
+  top: -40px;
+  left: 0;
+}
+
+.about__item--knot::before {
+  background-image: url("../../img/about/knot.svg");
+  width: 35px;
+  height: 34px;
+  top: -40px;
+  left: 0;
+}
+
+.about__item--domestic::before {
+  background-image: url("../../img/about/domestic.svg");
+  width: 55px;
+  height: 23px;
+  top: -40px;
+  left: 0;
+}
+
+.about__item--box::before {
+  background-image: url("../../img/about/box.svg");
+  width: 33px;
+  height: 32px;
+  top: -40px;
+  left: 0;
+}
+

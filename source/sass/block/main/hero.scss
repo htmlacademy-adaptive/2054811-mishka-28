@@ -1,0 +1,47 @@
+.hero {
+  background-image: url("../../img/hero/hero-bg.jpg");
+  background-repeat: no-repeat;
+
+}
+
+.hero__title {
+  padding: 72px 0  120px 0;
+  text-align: center;
+}
+
+.hero__item {
+  width: 320px;
+}
+
+.hero__item--inter {
+  position: relative;
+  background-color: #63d1bb;
+}
+
+.hero__item--inter::after {
+  position: absolute;
+  content: " ";
+  background-image: url("../../img/hero/lego.svg");
+  top: 0;
+  left: 0;
+}
+
+.hero__item--toy {
+  background-color: #56c3b2;
+}
+
+.hero__item--toy::after {
+  position: absolute;
+  content: " ";
+  background-image: url("../../img/hero/lamp.svg");
+  top: 0;
+  left: 0;
+}
+
+.hero__link {
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 19px;
+  line-height: 24px;
+  padding: 24px 160px 31px 30px;
+}

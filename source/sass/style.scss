@@ -1,4 +1,46 @@
 // Начните писать стили здесь
-body {
-  background: #ff0000;
-}
+
+//helper//
+@use "./helper/visually-hidden.scss";
+@use "./helper/container.scss";
+@use "./helper/fonts.scss";
+@use "./helper/variables.scss";
+@use "./helper/global.scss";
+@use "./helper/list.scss";
+@use "./helper/link.scss";
+@use "./helper/title.scss";
+@use "./helper/title-secondary.scss";
+@use "./helper/button.scss";
+
+@use "./block/body-page.scss";
+
+//header//
+@use "./block/header/header.scss";
+@use "./block/nav-list.scss";
+
+@use "./block/header/nav-button.scss";
+@use "./block/header/nav.scss";
+@use "./block/header/logo.scss";
+
+// main-page //
+@use "./block/main/main-page.scss";
+// hero //
+@use "./block/main/hero.scss";
+
+
+// week-product //
+@use "./block/main/week-product.scss";
+@use "./block/main/product-catalog.scss";
+// about //
+@use "./block/main/about.scss";
+//review//
+@use "./block/main/review.scss";
+@use "./block/main/slider-list.scss";
+
+
+@use "./block/main/contact.scss";
+
+// footer //
+@use "./block/footer/footer.scss";
+@use "./block/footer/social-list.scss";
+
