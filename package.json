@@ -5,10 +5,17 @@
   "devDependencies": {
     "@htmlacademy/editorconfig-cli": "1.0.0",
     "autoprefixer": "10.4.0",
+<<<<<<< HEAD
     "browser-sync": "^2.29.1",
     "gulp": "4.0.2",
     "gulp-dart-sass": "^1.0.2",
     "gulp-plumber": "^1.2.1",
+=======
+    "browser-sync": "2.27.7",
+    "gulp": "4.0.2",
+    "gulp-dart-sass": "^1.0.2",
+    "gulp-plumber": "1.2.1",
+>>>>>>> 70c6b7f5f3c4f10289e59059b61a8dc5a9a7b1c9
     "gulp-postcss": "9.0.1",
     "postcss": "8.3.11",
     "stylelint": "13.13.1",
