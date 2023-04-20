@@ -1,0 +1,31 @@
+
+.footer {
+  background-color: $white-gray;
+}
+
+.footer__wrapper-logo--hidden {
+  display: none;
+}
+
+.footer__dev {
+  display: flex;
+  width: 100%;
+  margin: 0 auto;
+  padding-bottom: 18px;
+}
+
+.footer__dev-description {
+  font-weight: 700;
+  font-size: 19px;
+  line-height: 18px;
+  padding-top: 19px;
+  margin-left: 63px;
+  margin-right: auto;
+}
+
+.footer-dev__logo {
+  margin-left: auto;
+  margin-right: 63px;
+  padding-top: 11px;
+}
+

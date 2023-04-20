@@ -1,9 +1,11 @@
 .header {
-  display: flex;
-  justify-content: center;
+  position: relative;
+  padding-top: 79px;
 }
 
-.header__logo{
-  margin-top: 22px;
-  margin-bottom: 16px;
+.header__logo {
+  position: absolute;
+  left: 50%;
+  top: 22px;
+  transform: translateX(-50%);
 }

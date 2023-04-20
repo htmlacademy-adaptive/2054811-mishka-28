@@ -1,0 +1,21 @@
+.modal-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: $white;
+}
+
+.modal-container__wrapper {
+  position: relative;
+  background-color: $white;
+  width: 100%;
+  border: 1px solid #c6c6c6;
+  box-shadow: 0 5px 10px rgba(0, 1, 1, 0.25);
+}
+
+.modal-container__title {
+  margin: 0 auto;
+  width: 170px;
+}

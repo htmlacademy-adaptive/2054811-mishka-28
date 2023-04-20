@@ -1,5 +1,6 @@
 .nav {
   position: relative;
+  text-align: center;
 }
 
 .nav__description {
@@ -7,9 +8,15 @@
 }
 
 .nav__toggle {
-  top: 32px;
-  left: 66px;
+  top: -50px;
+  right: 24px;
 }
-.nav__list {
 
+.nav-button__image--open {
+  display: none;
 }
+
+.nav__list {
+  margin-left: -67px;
+}
+

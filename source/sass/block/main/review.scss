@@ -1,14 +1,28 @@
 
+.review__title {
+  margin-left: 26px;
+}
+
 .review__slider-list {
   margin-bottom: 38px;
 }
 
-.review__sliders {
-  border: none;
-  padding: 13px;
+.review__sliders-button {
   background-color: transparent;
+  display: block;
+  border: 1px solid #ececec;
+  padding: 13px 41px 9px 38px;
 }
+
+.review__sliders--prev {
+  margin-right: 0;
+  margin-left: 26px;
+
+}
+
 .review__sliders--next {
+  margin-left: auto;
+  margin-right: 26px;
   svg {
     transform: rotate(180deg);
   }
@@ -16,24 +30,25 @@
 
 .review__button-wrapper {
   background: #ffffff;
-  mix-blend-mode: normal;
-  border: 1px solid #ececec;
+
   margin-bottom: 38px;
+  display: flex;
 }
 
 .review__button {
   margin-bottom: 89px;
   position: relative;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .review__button::after {
   content: "";
-  background-image: url("../../img/product/zigzag.svg");
-  width: 320px;
+  background: url("../img/product/zigzag.svg") repeat-x;
+  transform: rotate(180deg);
+  width: 100%;
   height: 6px;
   position: absolute;
-  bottom: 0;
+  bottom: -53px;
   left: 0;
-
-
 }

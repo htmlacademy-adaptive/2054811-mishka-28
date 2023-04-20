@@ -1,0 +1,49 @@
+.contact__title {
+  margin-left: 26px;
+  margin-bottom: 28px;
+}
+
+.contact__email {
+  margin-left: 26px;
+  margin-right: 30px;
+}
+
+.contact__email-wrapper {
+  display: flex;
+  align-items: center;
+  margin-bottom: 33px;
+}
+
+.contact__email-link {
+  font-size: 14px;
+  line-height: 28px;
+}
+
+.contact__address-wrapper {
+  display: flex;
+  margin-left: 24px;
+  margin-bottom: 61px;
+}
+
+.contact__address {
+  margin-left: 32px;
+  font-size: 14px;
+  line-height: 30px;
+  width: 183px;
+}
+
+.contact__map {
+  margin-bottom:47px;
+}
+
+.contact__map-image {
+  display: block;
+  margin: 0 auto;
+}
+
+.contact__map iframe {
+  display: block;
+}
+.contact__map-button {
+  margin-bottom: 39px;
+}
