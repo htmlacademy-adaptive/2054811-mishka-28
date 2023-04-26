@@ -1,23 +1,31 @@
 .measuare__item {
   display: flex;
   justify-content: flex-start;
-  margin-left: 26px;
+  border-bottom: 1px solid #ececec;
+  margin-right: 26px;
 }
 
 .measuare__color {
   width: 107px;
   padding-bottom: 15px;
+  //  position: relative;
 }
 
 .measuare__description {
-  margin-right: 30px;
   width: 170px;
   margin-left: auto;
 }
 
-.week-product__image {
-  margin: 0 auto;
-  display: block;
-  margin-bottom: 26px;
-  background-color: $white-gray;
+
+@media (min-width: $tablet) {
+  .measuare {
+    width: 330px;
+    padding-top: 19px;
+    font-size: 15px;
+    line-height: 20px;
+  }
+  .measuare__item{
+    padding-bottom: 4px;
+  }
 }
+

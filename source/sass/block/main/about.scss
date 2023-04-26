@@ -76,3 +76,42 @@
   left: 3px;
 }
 
+@media (min-width: $tablet) {
+  .about {
+    padding: 54px 50px 0px 23px;
+  }
+  .about__title {
+    margin-bottom: 97px;
+
+  }
+
+  .about__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 29px 14px;
+    margin-left: 2px;
+  }
+
+  .about__item {
+    font-size: 20px;
+    line-height: 22px;
+    width: 295px;
+  }
+
+  .about__item--eco {
+    order: -6;
+  }
+
+  .about__item--knot {
+    order: -5;
+  }
+
+  .about__item--scand {
+    order: -4;
+  }
+
+  .about__item--domestic {
+    order: -3;
+  }
+
+}

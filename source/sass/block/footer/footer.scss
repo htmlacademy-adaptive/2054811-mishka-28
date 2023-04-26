@@ -27,5 +27,20 @@
   margin-left: auto;
   margin-right: 63px;
   padding-top: 11px;
+  color: #63d1bb;
+}
+
+.footer-dev__logo:hover {
+  color: #46c1ae;
+}
+
+@media(min-width: $tablet) {
+
+  .footer__wrapper{
+    display: flex;
+  }
+  .footer__wrapper-logo--hidden{
+    display: block;
+  }
 }
 
