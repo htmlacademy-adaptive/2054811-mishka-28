@@ -7,7 +7,7 @@
     "autoprefixer": "10.4.0",
     "browser-sync": "2.27.7",
     "gulp": "4.0.2",
-    "gulp-dart-sass": "^1.0.2",
+    "gulp-dart-sass": "1.0.2",
     "gulp-plumber": "1.2.1",
     "gulp-postcss": "9.0.1",
     "postcss": "8.3.11",
@@ -39,5 +39,8 @@
   "engines": {
     "node": "^16"
   },
-  "type": "module"
+  "type": "module",
+  "dependencies": {
+    "gulp": "^4.0.2"
+  }
 }

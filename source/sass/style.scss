@@ -1,1 +1,45 @@
 // Начните писать стили здесь
+
+//helper//
+@import "./helper/visually-hidden.scss";
+@import "./helper/fonts.scss";
+@import "./helper/variables.scss";
+@import "./helper/global.scss";
+@import "./helper/list.scss";
+@import "./helper/link.scss";
+@import "./helper/main-title.scss";
+@import "./helper/title.scss";
+@import "./helper/title-secondary.scss";
+@import "./helper/button.scss";
+@import "./block/body-page.scss";
+
+//header//
+@import "./block/header/header.scss";
+@import "./block/header/nav-list.scss";
+@import "./block/header/nav-button.scss";
+@import "./block/header/nav.scss";
+@import "./block/header/logo.scss";
+
+// main-page //
+@import "./block/main/main-page.scss";
+// hero //
+@import "./block/main/hero.scss";
+
+
+// week-product //
+@import "./block/main/week-product.scss";
+@import "./block/main/product-catalog.scss";
+@import "./block/main/measuare.scss";
+
+// about //
+@import "./block/main/about.scss";
+//review//
+@import "./block/main/review.scss";
+@import "./block/main/slider-list.scss";
+@import "./block/main/contact.scss";
+// modal-container
+@import "./block/main/modal-container.scss";
+@import "./block/main/filter.scss";
+// footer //
+@import "./block/footer/footer.scss";
+@import "./block/footer/social-list.scss";

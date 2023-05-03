@@ -1,0 +1,33 @@
+.slider-list {
+  margin-bottom: 2px;
+}
+
+.slider-list__item {
+  display: none;
+}
+
+.slider-list__item--active {
+  display: block;
+}
+
+.slider-list__description {
+  margin-bottom: 18px;
+  width: 260px;
+  line-height: 30px;
+}
+
+.slider-list__name {
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  color: #000000;
+  margin-bottom: 2px;
+  display: block;
+}
+
+.slider-list__email {
+  font-size: 17px;
+  line-height: 30px;
+  display: block;
+  margin-bottom: 29px;
+}

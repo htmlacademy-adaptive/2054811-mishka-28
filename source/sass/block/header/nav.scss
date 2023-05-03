@@ -1,0 +1,22 @@
+.nav {
+  position: relative;
+  text-align: center;
+}
+
+.nav__description {
+  display: none;
+}
+
+.nav__toggle {
+  top: -50px;
+  right: 24px;
+}
+
+.nav-button__image--open {
+  display: none;
+}
+
+.nav__list {
+  margin-left: -67px;
+}
+

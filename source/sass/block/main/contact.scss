@@ -1,0 +1,135 @@
+.contact {
+  padding: 0 20px;
+}
+
+.contact__title {
+  margin-bottom: 28px;
+}
+
+.contact__email {
+  margin-right: 30px;
+}
+
+.contact__email-wrapper {
+  display: flex;
+  align-items: center;
+  margin-bottom: 33px;
+}
+
+.contact__email-link {
+  font-size: 14px;
+  line-height: 28px;
+  border-bottom: 1px solid #62d1ba;
+}
+
+.contact__address-wrapper {
+  display: flex;
+  gap: 31px;
+  margin-bottom: 61px;
+}
+
+.contact__address {
+  font-size: 14px;
+  line-height: 30px;
+  width: 183px;
+}
+
+.contact__map-image {
+  display: block;
+  margin: 0 auto;
+}
+
+.contact__map {
+  position: relative;
+}
+
+.contact__map::after {
+  position: absolute;
+  content: "";
+  background: url("../img/contact/map-pin.svg") no-repeat;
+  bottom: 47%;
+  left: 41%;
+  width: 67px;
+  height: 100px;
+}
+
+.contact__map-button {
+  margin-bottom: 39px;
+}
+
+.contact__email-link:hover {
+  color: #46c1ae;
+}
+
+@media (min-width: $tablet) {
+  .contact {
+    padding: 0 42px 0px 50px;
+  }
+
+  .contact__title {
+    margin-bottom: 0;
+    position: relative;
+  }
+
+  .contact__title::after {
+    position: absolute;
+    content: "";
+    background: url("../img/contact/flag.svg");
+    right: 0;
+    top: -25px;
+    width: 47px;
+    height: 81px;
+
+    @media (min-resolution: 2dppx) {
+      background: url("../img/contact/flag@2x.svg");
+    }
+  }
+
+  .contact__main-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 65px;
+    align-content: flex-start;
+    padding-top: 16px;
+    gap: 51px;
+  }
+
+  .contact__email-wrapper {
+    margin-bottom: 0;
+  }
+
+  .contact__email {
+    margin: 0;
+    min-width: 78px;
+  }
+
+  .contact__email-link {
+    font-size: 17px;
+    line-height: 30px;
+  }
+
+  .contact__address-wrapper {
+    margin-bottom: 0;
+    padding-top: 35px;
+    gap: 0;
+    padding-right: 37px;
+  }
+
+  .contact__address {
+    font-size: 17px;
+    line-height: 30px;
+    margin-left: 24px;
+  }
+
+  .contact__map {
+    margin-bottom: 31px;
+  }
+
+  .contact__map-button {
+    margin: 0 auto;
+    max-width: 230px;
+    padding: 14px 0;
+  }
+
+}
+

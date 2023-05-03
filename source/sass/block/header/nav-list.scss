@@ -1,0 +1,43 @@
+.nav-list {
+  // display: inline-block;
+  display: none;
+}
+
+.nav-list__item {
+  text-align: left;
+  position: relative;
+}
+
+.nav-list__item::before {
+  border: 1px solid #ececec;
+  width: 100vw;
+  height: 1px;
+  content: "";
+  position: absolute;
+}
+
+.nav-list__link {
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  padding: 29px 0 26px 83px;
+}
+
+.nav-list__link--icon {
+  position: relative;
+}
+
+.nav-list__link:hover {
+  opacity: 0.6;
+}
+
+.nav-list__link--icon svg {
+  position: absolute;
+  left: 14%;
+  top: 41%;
+}
+
+.nav-list__link--icon:hover svg {
+  color:#63d1bb;
+  opacity: 1;
+}

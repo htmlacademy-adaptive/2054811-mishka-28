@@ -1,0 +1,16 @@
+.button {
+  background: #ffffff;
+  border: 2px solid #444444;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 14px 50px;
+  cursor: pointer;
+  // display: block;
+}
+.button:hover {
+  background: #444444;
+  color: #ffffff
+}
