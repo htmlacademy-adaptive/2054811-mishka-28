@@ -2,12 +2,13 @@
   display: flex;
   justify-content: flex-start;
   border-bottom: 1px solid #ececec;
-  margin-right: 26px;
+  padding-bottom: 10px;
+  padding-top: 5px;
 }
 
 .measuare__color {
   width: 107px;
-  padding-bottom: 15px;
+  // padding-bottom: 14px;
   //  position: relative;
 }
 
@@ -16,7 +17,6 @@
   margin-left: auto;
 }
 
-
 @media (min-width: $tablet) {
   .measuare {
     width: 330px;
@@ -24,8 +24,14 @@
     font-size: 15px;
     line-height: 20px;
   }
-  .measuare__item{
-    padding-bottom: 4px;
+
+  .measuare__item {
+    padding-bottom: 14px;
+    border-top: 5px;
+  }
+  
+  .measuare__color {
+    width: 98px;
   }
 }
 

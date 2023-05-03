@@ -1,8 +1,7 @@
 .social-list {
   position: relative;
   display: flex;
-  padding-top: 29px;
-  padding-bottom: 36px;
+
 }
 
 .social-list::before {
@@ -27,7 +26,7 @@
 
 .social-list__item--vc {
   margin-right: auto;
-  margin-left: 86px;
+
 }
 
 .social-list__item--youtube {
@@ -37,5 +36,9 @@
 
 .social-list__item--telegram {
   margin-left: auto;
-  margin-right: 88px;
+}
+@media (min-width: $tablet) {
+  .social-list {
+    padding: 0;
+  }
 }

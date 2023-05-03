@@ -1,16 +1,5 @@
-.review::after {
-  content: "";
-  background: url("../img/product/zigzag.svg") repeat-x;
-  transform: rotate(180deg);
-  width: 100%;
-  height: 6px;
-  position: absolute;
-  bottom: -53px;
-  left: 0;
-
-}
-.review__title {
-  margin-left: 26px;
+.review {
+  padding: 0 20px 0 20px;
 }
 
 .review__slider-list {
@@ -26,12 +15,10 @@
 
 .review__sliders--prev {
   margin-right: 0;
-  margin-left: 26px;
 }
 
 .review__sliders--next {
   margin-left: auto;
-  margin-right: 26px;
   svg {
     transform: rotate(180deg);
   }
@@ -46,13 +33,8 @@
 .review__button {
   margin-bottom: 89px;
   position: relative;
-  margin-left: 30px;
-  margin-right: 31px;
-
-}
-
-.review__button::after {
-
+  // margin-left: 30px;
+  // margin-right: 31px;
 }
 
 .review__sliders-button:hover {
@@ -66,14 +48,14 @@
       "title button"
       "description space"
       "description slider-button";
-    padding-top: 24px;
+
+    padding: 20px 6px 0 50px;
   }
 
   .review__title {
     grid-area: title;
     position: relative;
     padding-top: 4px;
-    margin-left: 51px;
   }
 
   .review__title::after {
@@ -101,8 +83,7 @@
 
   .review__sliders-button-wrapper {
     grid-area: slider-button;
-    align-items: self-end;
-    margin-bottom: 111px;
+    margin-bottom: 114px;
   }
 
   .slider-list__description {

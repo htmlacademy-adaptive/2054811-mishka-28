@@ -1,7 +1,9 @@
+.about {
+  padding: 0 20px;
+}
 
 .about__title {
   margin-bottom: 82px;
-  margin-left: 26px;
 }
 
 .about__list {
@@ -15,7 +17,6 @@
   line-height: 20px;
   color: #000000;
   margin-bottom: 83px;
-  margin-left: 26px;
   width: 250px;
 }
 
@@ -78,17 +79,17 @@
 
 @media (min-width: $tablet) {
   .about {
-    padding: 54px 50px 0px 23px;
+    padding: 3px 50px 0 50px;
   }
+
   .about__title {
     margin-bottom: 97px;
-
   }
 
   .about__list {
     display: flex;
     flex-wrap: wrap;
-    gap: 29px 14px;
+    gap: 27px 38px;
     margin-left: 2px;
   }
 
@@ -113,5 +114,4 @@
   .about__item--domestic {
     order: -3;
   }
-
 }
