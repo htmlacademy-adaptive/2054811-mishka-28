@@ -3,6 +3,12 @@
   text-align: center;
 }
 
+.nav--with-js {
+  position: absolute;
+  width: 100%;
+  background: #fff;
+}
+
 .nav__description {
   display: none;
 }
@@ -10,13 +16,67 @@
 .nav__toggle {
   top: -50px;
   right: 24px;
+  display: none;
+  background: url("../img/header/menu-close.svg") no-repeat 0 0;
+  cursor: pointer;
 }
 
-.nav-button__image--open {
-  display: none;
+.nav--with-js .nav__toggle {
+  display: block;
+}
+
+.nav--closed .nav__toggle {
+  background: url("../img/header/menu.svg") no-repeat 0 0;
 }
 
 .nav__list {
   margin-left: -67px;
 }
 
+.nav--closed .nav__list {
+  display: none;
+}
+
+@media (min-width: $tablet) {
+  .nav--with-js {
+    position: relative;
+    background-color: transparent;
+    width: 100vw;
+  }
+
+  .nav--with-js .nav__toggle,
+  .nav__toggle {
+    display: none;
+  }
+
+  .nav--closed .nav__list,
+  .nav__list{
+    display: grid;
+    grid-template-columns: 170px 170px;
+    width: 50%;
+    margin: 0 0 0 31px;
+  }
+  .nav__description{
+    display: inline-block;
+    position: absolute;
+    top: 21px;
+    right: 63px;
+    font-size: 15px;
+    line-height: 24px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .nav--closed .nav__list, .nav__list {
+    grid-template-columns: 19% 20% 23% 7% 31%;
+    width: 100%;
+    margin: -86px 0 0 31px;
+  }
+
+  .nav__description {
+    right: 60px;
+    top: 105px;
+  }
+
+
+}

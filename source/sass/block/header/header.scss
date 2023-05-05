@@ -1,6 +1,7 @@
 .header {
   position: relative;
   padding-top: 79px;
+  z-index: 10;
 }
 
 .header__logo {
@@ -13,3 +14,38 @@
 .header__logo:hover {
   opacity: 0.3;
 }
+
+@media (min-width: $tablet) {
+  .header {
+    padding-top: 89px;
+    background: #fbfbfb;
+  }
+
+  .header::before {
+    content: "";
+    height: 89px;
+    width: 100%;
+    background-color: #ffffff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
+  .header__logo {
+    left: 50px;
+    top: 22px;
+    transform: none;
+  }
+}
+
+@media (min-width: $desktop) {
+  .header__logo {
+    left: 50%;
+    top: 8px;
+    transform: translateX(-50%);
+  }
+
+
+}
+
