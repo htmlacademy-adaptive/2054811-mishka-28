@@ -5,13 +5,14 @@
 @import "./helper/fonts.scss";
 @import "./helper/variables.scss";
 @import "./helper/global.scss";
-@import "./helper/list.scss";
 @import "./helper/link.scss";
 @import "./helper/main-title.scss";
 @import "./helper/title.scss";
 @import "./helper/title-secondary.scss";
 @import "./helper/button.scss";
 @import "./block/body-page.scss";
+@import "./helper/list-label.scss";
+@import "./helper/mixin.scss";
 
 //header//
 @import "./block/header/header.scss";
@@ -43,3 +44,13 @@
 // footer //
 @import "./block/footer/footer.scss";
 @import "./block/footer/social-list.scss";
+
+// FORM //
+@import "./block/main/main-form.scss";
+@import "./block/main/hero-form.scss";
+@import "./block/main/form.scss";
+
+// catalog
+@import "./block/main/catalog.scss";
+@import "./block/main/catalog-main.scss";
+@import "./block/main/process.scss";

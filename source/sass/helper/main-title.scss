@@ -10,3 +10,10 @@
     line-height: 50px;
   }
 }
+
+@media (min-width: $desktop){
+  .main-title {
+    font-size: 53px;
+    line-height: 57px;
+  }
+}

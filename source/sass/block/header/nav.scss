@@ -6,11 +6,7 @@
 .nav--with-js {
   position: absolute;
   width: 100%;
-  background: #fff;
-}
-
-.nav__description {
-  display: none;
+  background: #ffffff;
 }
 
 .nav__toggle {
@@ -19,6 +15,8 @@
   display: none;
   background: url("../img/header/menu-close.svg") no-repeat 0 0;
   cursor: pointer;
+  width: 21px;
+  height: 21px;
 }
 
 .nav--with-js .nav__toggle {
@@ -41,7 +39,7 @@
   .nav--with-js {
     position: relative;
     background-color: transparent;
-    width: 100vw;
+    // width: 100vw;
   }
 
   .nav--with-js .nav__toggle,
@@ -50,33 +48,21 @@
   }
 
   .nav--closed .nav__list,
-  .nav__list{
+  .nav__list {
     display: grid;
-    grid-template-columns: 170px 170px;
-    width: 50%;
-    margin: 0 0 0 31px;
-  }
-  .nav__description{
-    display: inline-block;
-    position: absolute;
-    top: 21px;
-    right: 63px;
-    font-size: 15px;
-    line-height: 24px;
+    grid-template-columns: 167px 152px minmax(84px, auto) minmax(298px, auto);
+    grid-template-rows: minmax(88px, auto) minmax(45px, auto);
+    margin: 0;
   }
 }
 
 @media (min-width: $desktop) {
-  .nav--closed .nav__list, .nav__list {
-    grid-template-columns: 19% 20% 23% 7% 31%;
-    width: 100%;
-    margin: -86px 0 0 31px;
+  .nav--closed .nav__list,
+  .nav__list {
+    display: grid;
+    grid-template-columns: 220px 183px 298px minmax(82px, auto) minmax(290px, auto);
+    grid-template-rows: minmax(88px, auto) minmax(45px, auto);
+    margin: 0;
   }
-
-  .nav__description {
-    right: 60px;
-    top: 105px;
-  }
-
 
 }

@@ -1,6 +1,15 @@
 
 .footer {
+  padding: 10px;
   background-color: $white-gray;
+}
+
+.footer__container {
+  padding: 19px 10px;
+}
+
+.footer__social-list {
+  margin-bottom: 36px;
 }
 
 .footer__wrapper-logo--hidden {
@@ -9,7 +18,7 @@
 
 .footer__dev {
   display: flex;
-  width: 100%;
+  width: 182px;
   margin: 0 auto;
   padding-bottom: 18px;
 }
@@ -19,29 +28,41 @@
   font-size: 19px;
   line-height: 18px;
   padding-top: 19px;
-  margin-left: 63px;
   margin-right: auto;
 }
 
 .footer-dev__logo {
-
   color: #63d1bb;
+  padding-top: 11px;
 }
 
 .footer-dev__logo:hover {
   color: #46c1ae;
 }
 
-@media(min-width: $tablet) {
+@media (min-width: $tablet) {
   .footer {
-    padding:50px 50px 50px 50px;
+    padding: 38px 30px 50px 50px;
   }
-  .footer__wrapper{
+
+  .footer__container {
+    padding: 1px 2px;
+  }
+
+  .footer__wrapper {
     display: flex;
     flex-wrap: wrap;
   }
-  .footer__wrapper-logo--hidden{
+
+  .footer__wrapper-logo--hidden {
     display: block;
+    width: 166px;
+    padding-top: 10px;
+  }
+
+  .footer__dev {
+    width: 178px;
+    margin: 0;
   }
 }
 

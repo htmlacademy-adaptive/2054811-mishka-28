@@ -17,13 +17,17 @@
 
 @media (min-width: $tablet) {
   .header {
-    padding-top: 89px;
+    padding: 0;
     background: #fbfbfb;
+  }
+  .header__container{
+    padding: 0 50px;
   }
 
   .header::before {
     content: "";
-    height: 89px;
+    min-height: 89px;
+    // height: 100%;
     width: 100%;
     background-color: #ffffff;
     position: absolute;
@@ -31,18 +35,23 @@
     left: 0;
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   }
-
   .header__logo {
-    left: 50px;
-    top: 22px;
+    left: 48px;
+    top: 21px;
     transform: none;
   }
 }
 
 @media (min-width: $desktop) {
+  .header__container {
+    min-width: $desktop;
+    margin: 0 auto;
+    padding: 0px 50px;
+  }
+
   .header__logo {
-    left: 50%;
-    top: 8px;
+    left: calc(50% + 7px);
+    top: 9px;
     transform: translateX(-50%);
   }
 

@@ -1,6 +1,5 @@
 .week-product {
   position: relative;
-  width: 100%;
   padding: 0 20px 0 22px;
 }
 
@@ -9,7 +8,7 @@
   background: url("../img/product/zigzag.svg") repeat-x;
   transform: rotate(180deg);
   height: 6px;
-  width: 100vw;
+  width: 100%;
   position: absolute;
   bottom: -42px;
   left: 0;
@@ -38,17 +37,22 @@
 
 @media (min-width: $tablet) {
   .week-product {
-    padding: 0 22px 52px 49px;
+    padding: 0 35px 0 49px;
+  }
+  .week-product__container {
+    padding: 0;
   }
 
   .week-product__title-wrapper {
     display: flex;
+    margin-bottom: 30px;
+    align-content: flex-start;
+    flex-wrap: wrap;
   }
 
   .week-product__title {
-    width: 455px;
-    padding-left: 0;
-    margin-bottom: 35px;
+    max-width: 500px;
+    margin: 0;
   }
 
   .week-product__description {
@@ -60,14 +64,14 @@
 
   .week-product__catalog {
     position: relative;
-
-    margin-right: 14px;
   }
 
-  .week-product__catalog::after {
+  .week-product::after {
     background: url(../img/product/zigzag-line-desktop.svg);
     height: 17px;
     bottom: -71px;
+    left: 0;
+    background-position: center;
 
     @media (min-resolution: 2dppx) {
       background: url("../img/product/zigzag-line-desktop@2x.svg");
@@ -78,6 +82,59 @@
     position: absolute;
     top: 99px;
     right: 0;
+  }
+}
 
+//desktop//
+@media (min-width: $desktop) {
+  .week-product {
+    padding: 0 35px 0 36px;
+  }
+  .week-product::after {
+    display: none;
+  }
+
+  .week-product__container {
+    margin: 0 auto;
+    width: 1050px;
+    position: relative;
+  }
+
+  .week-product__title-wrapper {
+    padding: 82px 0 0 39px;
+  }
+
+  .week-product__container::after {
+    position: absolute;
+    background: url("../img/product/zigzag-line-desktop.svg") repeat-x;
+    content: "";
+    width: 100%;
+    height: 23px;
+    bottom: -95px;
+    left: 9;
+    background-position: center;
+
+    @media (min-resolution: 2dppx) {
+      background: url("../img/product/zigzag-line-desktop@2x.svg");
+    }
+  }
+
+  .week-product__title {
+    font-size: 53px;
+    line-height: 57px;
+    max-width: 600px;
+    z-index: 15;
+    margin-left: 30px;
+  }
+
+  .week-product__image {
+    top: 20px;
+    right: -8px;
+  }
+
+  .week-product__description {
+    order: -1;
+    margin-left: 0;
+    padding-top: 4px;
   }
 }

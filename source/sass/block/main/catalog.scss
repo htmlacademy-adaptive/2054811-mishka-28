@@ -1,0 +1,44 @@
+.catalog__list {
+  @include list-reset;
+}
+
+.catalog__item {
+  margin-bottom: 55px;
+}
+
+.catalog__img {
+  margin-bottom: 22px;
+}
+
+.catalog__title {
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  margin-bottom: 5px;
+}
+
+.catalog__desc {
+  font-size: 13px;
+  line-height: 30px;
+  margin-bottom: 42px;
+}
+
+.catalog__desc-wrapper {
+  padding-left: 28px;
+}
+
+.catalog__price-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.catalog__price {
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 24px;
+  padding-left: 3px;
+}
+
+.catalog__svg {
+  margin-right: 26px;
+}

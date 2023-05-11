@@ -14,15 +14,29 @@
 
 @media (min-width: $tablet) {
   .main-page__hero {
-    margin-bottom: 58px;
+    margin-bottom: 54px;
+  }
+  .main-page__week-product {
+    margin-bottom: 123px;
   }
 
   .main-page__review {
     margin-bottom: 91px;
   }
-  
+
   .main-page__contact {
     margin-bottom: 55px;
   }
+}
+
+@media (min-width: $desktop) {
+  .main-page__hero {
+    margin-bottom: 54px;
+  }
+
+  .main-page__review {
+    margin-bottom: 98px;
+  }
+
 }
 

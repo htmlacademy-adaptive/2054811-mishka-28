@@ -1,7 +1,11 @@
 .social-list {
+  @include list-reset;
   position: relative;
   display: flex;
-
+  flex-wrap: wrap;
+  max-width: 145px;
+  margin: 0 auto;
+  margin-bottom: 36px;
 }
 
 .social-list::before {
@@ -12,9 +16,8 @@
   height: 2px;
   left: 50%;
   transform: translateX(-50%);
-  bottom: 10px;
+  bottom: -25px;
 }
-
 
 .social-list__svg {
   color: #231f20;
@@ -26,7 +29,6 @@
 
 .social-list__item--vc {
   margin-right: auto;
-
 }
 
 .social-list__item--youtube {
@@ -39,6 +41,12 @@
 }
 @media (min-width: $tablet) {
   .social-list {
-    padding: 0;
+    padding-top: 19px;
+    gap: 31px;
   }
+
+  .social-list::before {
+    display: none;
+  }
+
 }

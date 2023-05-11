@@ -1,5 +1,4 @@
 .hero {
-  width: 100vw;
   background-color: #f9f9f9;
 }
 
@@ -90,52 +89,91 @@
 
 //tablet//
 @media (min-width: $tablet) {
+  .hero{
+    position: relative;
+  }
+  .hero::after{
+    position: absolute;
+    content: "";
+    background: url("../img/product/zigzag-fill.svg") repeat-x;
+    width: 100%;
+    height: 24px;
+    bottom: -13px;
+    left: 0;
+    background-position-x: center;
+  }
+
+  .hero__container {
+    padding: 0 50px;
+  }
+
   .hero__title {
-    padding: 72px 6px 120px 0;
-    width: 600px;
-    margin-bottom: 249px;
+    padding: 111px 6px 372px 5px;
+    min-width: 650px;
   }
 
   .hero__title::before {
-    background-size: auto 268%;
-    background-position: 51% -90px;
+    background-size: 766px;
+    background-position: 52% -43px;
     background-image: url("../img/hero/hero-desktop.jpg");
   }
 
   .hero__list {
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
   }
 
   .hero__item {
-    width: 100%;
-    min-width: 334px;
+    width: 50%;
   }
 
-  .hero__list::after {
-    position: absolute;
-    content: "";
-    background: url("../img/product/zigzag-fill.svg") repeat-x;
-    width: calc(100% - 50px);
-    height: 24px;
-    bottom: -13px;
-    left: 24px;
-    z-index: 15;
-    background-position-x: center;
+  .hero__item--inter::after {
+    top: 26%;
+    right: 36px;
+  }
+
+  .hero__item--toy::after {
+    top: 26%;
+    right: 34px;
   }
 
   .hero__link {
     font-size: 20px;
     line-height: 30px;
-    padding-left: 39px;
-    padding-top: 27px;
+    padding-left: 36px;
+    padding-top: 26px;
+  }
+}
+//desktop//
+@media (min-width: $desktop) {
+  .hero::after {
+    background: url("../img/product/zigzag-fill-desktop.svg") repeat-x;
+    height: 34px;
+    bottom: -20px;
+    left: 0;
+    z-index: 15;
+
+    @media (min-resolution: 2dppx) {
+      background: url("../img/product/zigzag-fill-desktop@2x.svg");
+    }
   }
 
-  .hero__item--inter {
-    margin-left: 116px;
+  .hero__container {
+    margin: 0 auto;
+    width: 1050px;
+    padding: 0;
   }
 
-  .hero__item--toy {
-    margin-right: 125px;
+  .hero__title {
+    padding: 112px 6px 356px 21px;
   }
+
+  .hero__title::before {
+    background-position: 43% -45px;
+  }
+
+  .hero__list {
+    margin-left: 8px;
+  }
+
 }

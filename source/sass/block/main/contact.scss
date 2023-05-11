@@ -34,13 +34,18 @@
   width: 183px;
 }
 
-.contact__map-image {
-  display: block;
-  margin: 0 auto;
-}
-
 .contact__map {
   position: relative;
+  display: block;
+  border: none;
+  width: 100%;
+}
+
+
+.contact__map-wrapper {
+  position: relative;
+  margin-bottom: 34px;
+  margin-left: -22px;
 }
 
 .contact__map::after {
@@ -48,7 +53,8 @@
   content: "";
   background: url("../img/contact/map-pin.svg") no-repeat;
   bottom: 47%;
-  left: 41%;
+  left: 54%;
+  transform: translateX(-50%);
   width: 67px;
   height: 100px;
 }
@@ -63,7 +69,11 @@
 
 @media (min-width: $tablet) {
   .contact {
-    padding: 0 42px 0px 50px;
+    padding: 0;
+  }
+
+  .contact__container {
+    padding: 25px 36px 0 50px;
   }
 
   .contact__title {
@@ -88,10 +98,9 @@
   .contact__main-wrapper {
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: 65px;
     align-content: flex-start;
-    padding-top: 16px;
     gap: 51px;
+    margin-bottom: 49px;
   }
 
   .contact__email-wrapper {
@@ -109,26 +118,92 @@
   }
 
   .contact__address-wrapper {
-    margin-bottom: 0;
-    padding-top: 35px;
+    padding-top: 49px;
     gap: 0;
-    padding-right: 37px;
+    margin-bottom: 0;
   }
 
   .contact__address {
+    font-style: normal;
     font-size: 17px;
     line-height: 30px;
-    margin-left: 24px;
+    margin-left: 27px;
+    width: 222px;
+  }
+
+  .contact__map-wrapper {
+    margin-bottom: 50px;
   }
 
   .contact__map {
-    margin-bottom: 31px;
+    margin-bottom: 57px;
+  }
+
+  .contact__map::after {
+    bottom: 48%;
+    left: 53%;
   }
 
   .contact__map-button {
     margin: 0 auto;
     max-width: 230px;
     padding: 14px 0;
+  }
+}
+
+@media (min-width: $desktop) {
+  .contact {
+    display: grid;
+    grid-template-columns: 348px 527px;
+    column-gap: 54px;
+    padding: 97px 0 0 173px;
+  }
+
+  .contact__container {
+    width: 1050px;
+    margin: 0 auto;
+    grid-column: 1/2;
+    grid-row: 1/3;
+    padding: 81px 36px 0 50px;
+  }
+
+  .contact__main-wrapper {
+    display: block;
+    margin-bottom: 0;
+  }
+
+  .contact__address-wrapper {
+    padding-top: 29px;
+  }
+
+  .contact__address {
+    margin-left: 27px;
+  }
+
+  .contact__map-wrapper {
+    margin-bottom: 0;
+    grid-column: 2/3;
+    grid-row: 1/3;
+  }
+
+  .contact__map {
+    margin-bottom: 0;
+  }
+
+  .contact__map-button {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    font-size: 17px;
+    min-width: 230px;
+  }
+
+  .contact__title {
+    margin-bottom: 36px;
+  }
+
+  .contact__title::after {
+    left: -111px;
+    top: -17px;
   }
 
 }
