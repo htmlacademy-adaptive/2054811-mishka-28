@@ -1,18 +1,19 @@
+.hero-form {
+  background-color: $white-gray;
+}
+
 .hero-form__title {
   position: relative;
-  padding: 73px 0 74px 0;
+  padding: 74px 30px 74px 30px;
   text-align: center;
-  background-color: $white-gray;
 
   @include tablet {
-    position: relative;
-    padding: 56px 3px 74px 25px;
-    width: 425px;
-    margin: 0 auto;
+    padding: 56px 35px 74px 50px;
   }
 
   @include desktop {
-    width: 530px;
+    width: 100%;
+    padding-bottom: 94px;
   }
 }
 
@@ -24,5 +25,5 @@
   top: 0;
   left: 0;
   z-index: -1;
-  background-color: $white-gray;
+
 }

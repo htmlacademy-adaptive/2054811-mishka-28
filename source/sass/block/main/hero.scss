@@ -3,7 +3,7 @@
 }
 
 .hero__title {
-  padding: 72px 15px 120px 0;
+  padding: 72px 0 120px;
   text-align: center;
   position: relative;
   width: 260px;
@@ -18,8 +18,8 @@
   height: 100%;
   background-image: url("../img/hero/hero-bg.jpg");
   background-repeat: no-repeat;
-  background-position: 55% -21px;
-  background-size: auto 133%;
+  background-position: 52% -17px;
+  background-size: auto 132%;
   top: 0;
   left: 50%;
   transform: translateX(-50%);
@@ -45,8 +45,8 @@
   position: absolute;
   content: " ";
   background-image: url("../img/hero/lamp.svg");
-  top: 27%;
-  right: 33px;
+  top: 24px;
+  right: 35px;
   width: 40px;
   height: 62px;
 }
@@ -59,8 +59,8 @@
   position: absolute;
   content: " ";
   background-image: url("../img/hero/lego.svg");
-  top: 29%;
-  right: 34px;
+  top: 22px;
+  right: 27px;
   width: 60px;
   height: 60px;
 }
@@ -70,8 +70,8 @@
   font-weight: 700;
   font-size: 19px;
   line-height: 24px;
-  padding: 24px 160px 31px 20px;
-  width: 130px;
+  padding: 25px 160px 31px 30px;
+  min-height: 103px;
 }
 
 .hero__item--toy:hover {

@@ -13,6 +13,11 @@
 @import "./block/body-page.scss";
 @import "./helper/list-label.scss";
 @import "./helper/mixin.scss";
+@import "./block/main/radio.scss";
+@import "./block/main/checkbox.scss";
+@import "./block/main/name.scss";
+@import "./block/main/conection.scss";
+@import "./block/main/textarea.scss";
 
 //header//
 @import "./block/header/header.scss";
@@ -53,4 +58,7 @@
 // catalog
 @import "./block/main/catalog.scss";
 @import "./block/main/catalog-main.scss";
-@import "./block/main/process.scss";
+// @import "./block/main/process.scss";
+
+
+@import "./block/main/map.scss";
