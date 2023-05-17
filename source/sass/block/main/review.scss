@@ -1,80 +1,75 @@
 .review {
-  padding: 0 20px 0 20px;
-}
+  padding: 0 31px;
 
-.review__slider-list {
-  margin-bottom: 30px;
-}
-
-.review__sliders-button {
-  background-color: transparent;
-  display: block;
-  border: 1px solid #ececec;
-  padding: 13px 41px 9px 38px;
-}
-
-.review__sliders--prev {
-  margin-right: 0;
-}
-
-.review__sliders--next {
-  margin-left: auto;
-  svg {
-    transform: rotate(180deg);
-  }
-}
-
-.review__sliders-button-wrapper {
-  background: #ffffff;
-  width: 259px;
-  margin: 0 auto 38px;
-  display: flex;
-}
-
-.review__button {
-  margin-bottom: 89px;
-  position: relative;
-}
-
-.review__sliders-button:hover {
-  opacity: 0.6;
-}
-
-@media (min-width: $tablet) {
-  .review {
+  @include tablet {
     padding: 0;
     position: relative;
   }
+}
 
-  .review::after {
+.review::after {
+  @include tablet {
     position: absolute;
     content: "";
     background: url("../img/product/zigzag-line-desktop.svg");
     height: 17px;
     width: 100%;
-    bottom: -51px;
+    bottom: -82px;
     left: 0;
     background-position: center;
-
-    @media (min-resolution: 2dppx) {
-      background: url("../img/product/zigzag-line-desktop@2x.svg");
-    }
   }
 
-  .review__container {
+  @include desktop {
+    display: none;
+
+  }
+}
+
+.review__container {
+  width: 262px;
+  margin: 0 auto;
+  @include tablet {
+    width: 100%;
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-rows: auto minmax(225px, auto) 1fr;
-    padding: 23px 32px 18px 51px;
+    padding: 23px 51px 18px 51px;
   }
 
-  .review__title {
+  @include desktop {
+    position: relative;
+    width: 1050px;
+    margin: 0 auto;
+    padding: 23px 0 0 183px;
+    grid-template-columns: 50% 51%;
+  }
+}
+
+.review__container::after {
+  @include desktop {
+    position: absolute;
+    content: "";
+    background: url("../img/product/zigzag-line-desktop.svg") repeat-x;
+    height: 23px;
+    width: 100%;
+    bottom: -126px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-position: center;
+  }
+}
+
+.review__title {
+  @include tablet {
     grid-column: 1/2;
     grid-row: 1/2;
     position: relative;
+    padding-top: 3px;
   }
+}
 
-  .review__title::after {
+.review__title::after {
+  @include tablet {
     position: absolute;
     content: "";
     background-image: url("../img/review/review.jpg");
@@ -85,74 +80,95 @@
     left: -50px;
   }
 
-  .review__slider-list {
-    grid-column: 1/-1;
-    grid-row: 2/4;
+  @include desktop {
+    .review__title::after {
+      left: -175px;
+    }
   }
+}
 
-  .review__button {
-    grid-column: 2/3;
-    grid-row: 1/2;
-    max-width: 176px;
-    padding: 14px 36px;
-    margin-left: auto;
-    margin-bottom: 0;
-  }
+.review__sliders-button-wrapper {
+  background: $white;
+  width: 259px;
+  margin: 0 auto 38px;
+  display: flex;
+  border: 1px solid $light-gray;
 
-  .review__sliders-button-wrapper {
+  @include tablet {
     grid-column: 2/3;
     grid-row: 3/4;
-    margin: 0;
-    width: 140px;
+    width: 176px;
     align-self: self-start;
     justify-self: self-end;
-    margin-right: 24px;
+    margin: -2px -11px 0 0;
+    border: none;
   }
 
-  .slider-list__description {
-    display: inline;
+  @include desktop {
+    grid-row: 2/3;
+    align-self: self-end;
   }
+}
 
-  .review__sliders-button {
+.review__sliders-button {
+  background-color: transparent;
+  display: block;
+  padding: 11px 40px 9px 36px;
+  border: none;
+
+  @include tablet {
     padding: 14px 31px 9px 6px;
     border: none;
   }
 }
 
-@media (min-width: $desktop) {
-  .review__container {
-    position: relative;
-    width: 1050px;
-    margin: 0 auto;
-    padding: 23px 0 0 183px;
-    grid-template-columns: 50% 51%;
+.review__sliders--prev {
+  margin-right: 0;
+  border-right: 1px solid $light-gray;
+  @include tablet {
+    border: none;
+  }
+}
+
+.review__sliders--next {
+  margin-left: auto;
+
+  svg {
+    transform: rotate(180deg);
+  }
+}
+
+.review__button {
+  margin-bottom: 82px;
+  position: relative;
+
+  @include tablet {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    padding: 14px 36px;
+    margin-left: auto;
+    margin-bottom: 0;
+
+  }
+}
+
+.review__sliders-button:hover {
+  opacity: 0.6;
+}
+
+.review__slider-list {
+  @include tablet {
+    grid-column: 1/-1;
+    grid-row: 2/4;
   }
 
-  .review__container::after {
-    position: absolute;
-    content: "";
-    background: url("../img/product/zigzag-line-desktop.svg") repeat-x;
-    height: 23px;
-    width: 100%;
-    bottom: -126px;
-    left: 50%;
-    transform: translateX(-50%);
-    background-position: center;
+  @include desktop {
+    margin-bottom: 30px;
+  }
+}
 
-    @media (min-resolution: 2dppx) {
-      background: url("../img/product/zigzag-line-desktop@2x.svg") repeat-x;
-    }
-
+.slider-list__description {
+  @include tablet {
+    display: inline;
   }
-  .review::after{
-    display: none;
-  }
-  .review__title::after{
-    left: -175px;
-  }
-  .review__sliders-button-wrapper {
-    grid-row: 2/3;
-    align-self: self-end;
-  }
-
 }

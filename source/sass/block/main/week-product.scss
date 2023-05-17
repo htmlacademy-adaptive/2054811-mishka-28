@@ -1,6 +1,14 @@
 .week-product {
   position: relative;
-  padding: 0 30px 0 30px;
+  padding: 0 31px;
+
+  @include tablet {
+    padding: 0 50px;
+  }
+
+  @include desktop {
+    padding: 0 35px 0 36px;
+  }
 }
 
 .week-product::after {
@@ -11,13 +19,41 @@
   width: 100%;
   position: absolute;
   bottom: -42px;
-  left: 0;
+  left: 20px;
+
+  @include tablet {
+    background: url("../img/product/zigzag-line-desktop.svg") repeat-x;
+    height: 17px;
+    bottom: -71px;
+    background-position: center;
+
+    @media (min-resolution: 2dppx) {
+      background: url("../img/product/zigzag-line-desktop@2x.svg");
+    }
+  }
+
+  @include desktop {
+    display: none;
+  }
 }
 
 .week-product__title {
   margin-bottom: 5px;
   text-align: left;
   margin-right: auto;
+
+  @include tablet {
+    max-width: 500px;
+    margin: 0;
+  }
+
+  @include desktop {
+    font-size: 53px;
+    line-height: 57px;
+    max-width: 600px;
+    z-index: 15;
+    margin-left: 30px;
+  }
 }
 
 .week-product__description {
@@ -26,86 +62,81 @@
   font-size: 17px;
   text-align: left;
   text-transform: uppercase;
+
+  @include tablet {
+    width: 100px;
+    margin-left: auto;
+    margin-right: 16px;
+    line-height: 17px;
+    text-align: center;
+    padding-top: 4px;
+  }
+
+  @include desktop {
+    order: -1;
+    margin-left: 0;
+    padding-top: 4px;
+  }
 }
 
 .week-product__image {
-  margin: 0 auto;
+  margin: 0 auto 27px;
   display: block;
-  margin-bottom: 27px;
   background-color: $white-gray;
   width: 100%;
-}
 
-@media (min-width: $tablet) {
-  .week-product {
-    padding: 0 35px 0 49px;
-  }
-  .week-product__container {
-    padding: 0;
-  }
-
-  .week-product__title-wrapper {
-    display: flex;
-    margin-bottom: 30px;
-    align-content: flex-start;
-    flex-wrap: wrap;
-  }
-
-  .week-product__title {
-    max-width: 500px;
-    margin: 0;
-  }
-
-  .week-product__description {
-    width: 100px;
-    margin-left: auto;
-    margin-right: 14px;
-    text-align: center;
-  }
-
-  .week-product__catalog {
-    position: relative;
-  }
-
-  .week-product::after {
-    background: url(../img/product/zigzag-line-desktop.svg);
-    height: 17px;
-    bottom: -71px;
-    left: 0;
-    background-position: center;
-
-    @media (min-resolution: 2dppx) {
-      background: url("../img/product/zigzag-line-desktop@2x.svg");
-    }
-  }
-
-  .week-product__image {
+  @include tablet {
     position: absolute;
     top: 99px;
-    right: 0;
+    right: 3px;
+    width: auto;
+  }
+
+  @include desktop {
+    top: 20px;
+    right: -8px;
   }
 }
 
-//desktop//
-@media (min-width: $desktop) {
-  .week-product {
-    padding: 0 35px 0 36px;
-  }
-  .week-product::after {
-    display: none;
+.week-product__container {
+  width: 262px;
+  margin: 0 auto;
+
+  @include tablet {
+    padding: 0;
+    width: 100%;
   }
 
-  .week-product__container {
+  @include desktop {
     margin: 0 auto;
     width: 1050px;
     position: relative;
   }
+}
 
+@include tablet {
   .week-product__title-wrapper {
+    display: flex;
+    margin-bottom: 31px;
+    align-content: flex-start;
+    flex-wrap: wrap;
+  }
+}
+
+@include tablet {
+  .week-product__catalog {
+    position: relative;
+  }
+}
+
+.week-product__title-wrapper {
+  @include desktop {
     padding: 82px 0 0 39px;
   }
+}
 
-  .week-product__container::after {
+.week-product__container::after {
+  @include desktop {
     position: absolute;
     background: url("../img/product/zigzag-line-desktop.svg") repeat-x;
     content: "";
@@ -119,23 +150,5 @@
       background: url("../img/product/zigzag-line-desktop@2x.svg");
     }
   }
-
-  .week-product__title {
-    font-size: 53px;
-    line-height: 57px;
-    max-width: 600px;
-    z-index: 15;
-    margin-left: 30px;
-  }
-
-  .week-product__image {
-    top: 20px;
-    right: -8px;
-  }
-
-  .week-product__description {
-    order: -1;
-    margin-left: 0;
-    padding-top: 4px;
-  }
 }
+

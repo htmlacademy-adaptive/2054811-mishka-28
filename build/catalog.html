@@ -16,7 +16,7 @@
         <picture>
           <source media="(min-width: 1150px)" srcset="./img/header/mishka-logo-desktop.svg">
           <source media="(min-width: 768px)" srcset="./img/header/mishka-logo-tablet.svg">
-          <img src="./img/header/logo.svg" alt="Логотип мазагина игрушек-Мишка." class="logo">
+          <img src="./img/header/mishka-logo-mobile.svg" alt="Логотип мазагина игрушек-Мишка." class="logo">
         </picture>
       </a>
       <nav class="nav">
@@ -65,19 +65,26 @@
     </div>
   </header>
   <main class="catalog-main  hero">
-    <h1 class="catalog-main__title hero-form__title main-title">Каталог товаров</h1>
+    <h1 class="catalog-main__title main-title">Каталог товаров</h1>
     <section class="catalog">
       <div class="catalog-main__container">
         <ul class="catalog__list">
           <li class="catalog__item ">
 
             <picture>
-              <source media="(min-width: 1050px)" srcset="">
-              <source media="(min-width: 768px)" srcset="">
-              <source media="(min-width: 10px)" srcset="">
-              <source media="(min-width: 1050px)" srcset="">
-              <source media="(min-width: 768px)" srcset="">
-              <img class="catalog__img" src="./img/catalog/photo1.jpg" alt="Вязанный зайка." width="260" height="195">
+              <source media="(min-width: 1050px)" type="image/webp"
+                srcset="./img/catalog/photo1-desktop.webp 1x,./img/catalog/photo1-desktop@2x.webp 2x">
+              <source media="(min-width: 768px)" type="image/webp"
+                srcset="./img/catalog/photo1-tablet.webp 1x,./img/catalog/photo1-tablet.@xwebp 2x">
+              <source media="(min-width: 10px)" type="image/webp"
+                srcset="./img/catalog/photo1.webp 1x,./img/catalog/photo1-mobile@2x.webp 2x">
+
+              <source media="(min-width: 1050px)"
+                srcset="./img/catalog/photo1-desktop.jpg 1x,./img/catalog/photo1-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)"
+                srcset="./img/catalog/photo1-tablet.jpg 1x,./img/catalog/photo1-tablet@2x.jpg 2x">
+              <img class="catalog__img" src="./img/catalog/photo1.jpg" srcset="./img/catalog/photo1-mobile@2x.jpg"
+                alt=" Вязанный зайка." width="260" height="195">
             </picture>
 
             <div class="catalog__desc-wrapper">
@@ -99,13 +106,19 @@
           </li>
           <li class="catalog__item">
             <picture>
-              <source media="(min-width: 1050px)" srcset="">
-              <source media="(min-width: 768px)" srcset="">
-              <source media="(min-width: 10px)" srcset="">
-              <source media="(min-width: 1050px)" srcset="">
-              <source media="(min-width: 768px)" srcset="">
-              <img class="catalog__img" src="./img/catalog/photo2.jpg" alt="Вязанная корзинка." width="260"
-                height="195">
+              <source media="(min-width: 1050px)" type="image/webp"
+                srcset="./img/catalog/photo2-desktop.webp 1x,./img/catalog/photo2-desktop@2x.webp 2x">
+              <source media="(min-width: 768px)" type="image/webp"
+                srcset="./img/catalog/photo2-tablet.webp 1x,./img/catalog/photo2-tablet.@xwebp 2x">
+              <source media="(min-width: 10px)" type="image/webp"
+                srcset="./img/catalog/photo2.webp 1x,./img/catalog/photo2-mobile@2x.webp 2x">
+
+              <source media="(min-width: 1050px)"
+                srcset="./img/catalog/photo2-desktop.jpg 1x, ./img/catalog/photo2-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)"
+                srcset="./img/catalog/photo2-tablet.jpg 1x, ./img/catalog/photo2-tablet@2x.jpg 2x">
+              <img class="catalog__img" src="./img/catalog/photo2.jpg" alt="Вязанная корзинка."
+                srcset="./img/catalog/photo2-mobile@2x.jpg 2x" width="260" height="195">
             </picture>
 
 
@@ -113,7 +126,7 @@
               <h2 class="catalog__title">Корзинка для белья</h2>
               <p class="catalog__desc">Диаметр 15 см, высота 10 см</p>
               <div class="catalog__price-wrapper">
-                <span class="catalog__price">960 руб.</span>
+                <span class="catalog__price">690 руб.</span>
                 <a href="#" class="catalog__link">
                   <span class="visually-hidden">Добавить в корзину</span>
                   <svg class="catalog__svg" xmlns="http://www.w3.org/2000/svg" width="21" height="18" fill="none"
@@ -122,24 +135,28 @@
                       d="M20.188 6.857h-3.55L13.188.381C12.985 0 12.58-.095 12.174.095s-.507.572-.304.953l3.145 5.81H5.783l3.145-5.81c.202-.381 0-.762-.305-.953-.406-.19-.811 0-1.014.286l-3.45 6.476H.812c-.406 0-.812.286-.812.762 0 .381.304.762.812.762h.202l.914 2.857c-.203.095-.305.286-.305.572 0 .38.305.666.71.666L4.058 18h12.884l1.725-5.524c.405 0 .71-.286.71-.667 0-.19-.102-.476-.304-.57l.912-2.858h.203c.406 0 .812-.286.812-.762 0-.476-.406-.762-.812-.762Zm-4.565 9.62H5.073L3.854 12.38h13.087l-1.319 4.095Zm1.623-5.525H3.348l-.812-2.666h15.522l-.812 2.666Z"
                       opacity=".2" />
                   </svg>
-                  </svg>
                 </a>
               </div>
             </div>
           </li>
           <li class="catalog__item">
             <picture>
-              <source media="(min-width: 1050px)" srcset=" ./img/catalog/photo3.jpg 1x,./img/catalog/photo3.jpg 1x">
-              <source media="(min-width: 768px)" srcset="./img/catalog/photo3.jpg 1x,./img/catalog/photo3.jpg 1x">
-              <source media="(min-width: 10px)" srcset="./img/catalog/photo3.jpg 1x,./img/catalog/photo3.jpg 1x">
-              <source media="(min-width: 1050px)" srcset="./img/catalog/photo3.jpg 1x,./img/catalog/photo3.jpg 1x">
-              <source media="(min-width: 1050px)" srcset="./img/catalog/photo3.jpg 1x,./img/catalog/photo3.jpg 1x">
+              <source media="(min-width: 1050px)" type="image/webp"
+                srcset=" ./img/catalog/photo3.webp 1x,./img/catalog/photo3@2x.webp 2x">
+              <source media="(min-width: 768px)" type="image/webp"
+                srcset="./img/catalog/photo3.webp 1x,./img/catalog/photo3@2x.webp 2x">
+              <source media="(min-width: 10px)" type="image/webp"
+                srcset="./img/catalog/photo3.webp 1x,./img/catalog/photo3@2x.webp 2x">
 
-              <img class="catalog__img" src="./img/catalog/photo3.jpg 1x," alt="Вязанная корзинка для игрушек."
-                width="260" height="195">
+              <source media="(min-width: 1050px)"
+                srcset="./img/catalog/photo3-desktop.jpg 1x,./img/catalog/photo3-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)"
+                srcset="./img/catalog/photo3-tablet.jpg 1x,./img/catalog/photo3-tablet@2x.jpg 2x">
+              <img class="catalog__img" src="./img/catalog/photo3.jpg" srcset="./img/catalog/photo3-mobile@2x.jpg 2x"
+                alt="Вязанная корзинка для игрушек." width="260" height="195">
             </picture>
             <div class="catalog__desc-wrapper">
-              <h2 class="catalog__title">Большая корзинкадля игрушек</h2>
+              <h2 class="catalog__title">Большая корзинка для&nbsp;игрушек</h2>
               <p class="catalog__desc">Диаметр 30 см, высота 30 см</p>
               <div class="catalog__price-wrapper">
                 <span class="catalog__price">1 500 руб.</span>
@@ -151,7 +168,6 @@
                       d="M20.188 6.857h-3.55L13.188.381C12.985 0 12.58-.095 12.174.095s-.507.572-.304.953l3.145 5.81H5.783l3.145-5.81c.202-.381 0-.762-.305-.953-.406-.19-.811 0-1.014.286l-3.45 6.476H.812c-.406 0-.812.286-.812.762 0 .381.304.762.812.762h.202l.914 2.857c-.203.095-.305.286-.305.572 0 .38.305.666.71.666L4.058 18h12.884l1.725-5.524c.405 0 .71-.286.71-.667 0-.19-.102-.476-.304-.57l.912-2.858h.203c.406 0 .812-.286.812-.762 0-.476-.406-.762-.812-.762Zm-4.565 9.62H5.073L3.854 12.38h13.087l-1.319 4.095Zm1.623-5.525H3.348l-.812-2.666h15.522l-.812 2.666Z"
                       opacity=".2" />
                   </svg>
-
                 </a>
               </div>
             </div>
@@ -160,13 +176,15 @@
       </div>
     </section>
     <section class="process">
-      <div class="catalog-main__container">
+      <div class="process__container">
         <h2 class="process__title">Процесс производства</h2>
-        <video class="process__video" width="260" height="150" controls poster="./img/process/video-preview.jpg">
-          <source src="#" type="video/mp4">
-          <source src="#" type="video/ogg">
-          <span class="visually-hidden">Видео процесса производства корзинок</span>
-        </video>
+        <div class="process__video-wrapper">
+          <video class=" process__video" width="260" height="150" poster="./img/process/video-preview.jpg">
+            <!-- <source src="#" type="video/mp4">
+            <source src="#" type="video/ogg"> -->
+            <span class="visually-hidden">Видео процесса производства корзинок</span>
+          </video>
+        </div>
         <p class="process__desc">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как
           появляются наши товары.</p>
         <button class="button button--primary process__button">Сделать заказ</button>

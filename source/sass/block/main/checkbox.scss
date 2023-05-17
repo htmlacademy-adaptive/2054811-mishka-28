@@ -5,6 +5,7 @@
     margin-right: 166px;
     padding-top: 15px;
   }
+
   @include desktop {
     margin-right: 112px;
     padding-top: 19px;
@@ -22,6 +23,7 @@
     gap: 26px 76px;
     flex-direction: row;
   }
+
   @include desktop {
     gap: 25px 77px;
   }
@@ -54,8 +56,7 @@
   }
 
   @include desktop {
-    padding: 6px 0 0 83px
-      px;
+    padding: 6px 0 0 83px;
   }
 }
 

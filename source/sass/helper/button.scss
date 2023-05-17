@@ -6,11 +6,16 @@
   line-height: 20px;
   text-transform: uppercase;
   text-align: center;
-  padding: 14px 50px;
+  padding: 14px 10px;
   cursor: pointer;
-  // display: block;
+  min-height: 28px;
+
+  // @include tablet {
+  //   font-size: 17px;
+  // }
 }
+
 .button:hover {
   background: #444444;
-  color: #ffffff
+  color: $white;
 }

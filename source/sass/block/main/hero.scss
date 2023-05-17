@@ -1,5 +1,46 @@
 .hero {
   background-color: #f9f9f9;
+
+  @include tablet {
+    position: relative;
+  }
+}
+
+// .hero::after {
+//   @include tablet {
+//     position: absolute;
+//     content: "";
+//     background: url("../img/product/zigzag-fill.svg") repeat-x;
+//     width: 100%;
+//     height: 24px;
+//     bottom: -13px;
+//     left: 0;
+//     background-position-x: center;
+//   }
+
+//   @include desktop {
+//     background: url("../img/product/zigzag-fill-desktop.svg") repeat-x;
+//     height: 34px;
+//     bottom: -20px;
+//     left: 0;
+//     z-index: 15;
+
+//     @media (min-resolution: 2dppx) {
+//       background: url("../img/product/zigzag-fill-desktop@2x.svg");
+//     }
+//   }
+// }
+
+.hero__container {
+  @include tablet {
+    padding: 0 50px;
+  }
+
+  @include desktop {
+    margin: 0 auto;
+    width: 1050px;
+    padding: 0;
+  }
 }
 
 .hero__title {
@@ -9,6 +50,15 @@
   width: 260px;
   margin: 0 auto;
   z-index: 5;
+
+  @include tablet {
+    padding: 111px 6px 372px 5px;
+    min-width: 650px;
+  }
+
+  @include desktop {
+    padding: 112px 6px 356px 21px;
+  }
 }
 
 .hero__title::before {
@@ -24,17 +74,41 @@
   left: 50%;
   transform: translateX(-50%);
   z-index: -1;
+
+  @include tablet {
+    background-size: 766px;
+    background-position: 52% -43px;
+    background-image: url("../img/hero/hero-desktop.jpg");
+  }
+
+  @include desktop {
+    background-position: 43% -45px;
+  }
 }
 
 .hero__list {
+  @include list-reset;
   width: 100%;
   margin: 0 auto;
   position: relative;
+
+  @include tablet {
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 119px;
+  }
+
+  @include desktop {
+  }
 }
 
 .hero__item {
   position: relative;
   text-align: left;
+
+  @include tablet {
+    width: 50%;
+  }
 }
 
 .hero__item--inter {
@@ -49,6 +123,11 @@
   right: 35px;
   width: 40px;
   height: 62px;
+
+  @include tablet {
+    top: 26%;
+    right: 36px;
+  }
 }
 
 .hero__item--toy {
@@ -63,6 +142,11 @@
   right: 27px;
   width: 60px;
   height: 60px;
+
+  @include tablet {
+    top: 26%;
+    right: 34px;
+  }
 }
 
 .hero__link {
@@ -72,6 +156,13 @@
   line-height: 24px;
   padding: 25px 160px 31px 30px;
   min-height: 103px;
+
+  @include tablet {
+    font-size: 20px;
+    line-height: 30px;
+    padding-left: 36px;
+    padding-top: 26px;
+  }
 }
 
 .hero__item--toy:hover {
@@ -87,93 +178,3 @@
   padding-top: 21px;
 }
 
-//tablet//
-@media (min-width: $tablet) {
-  .hero{
-    position: relative;
-  }
-  .hero::after{
-    position: absolute;
-    content: "";
-    background: url("../img/product/zigzag-fill.svg") repeat-x;
-    width: 100%;
-    height: 24px;
-    bottom: -13px;
-    left: 0;
-    background-position-x: center;
-  }
-
-  .hero__container {
-    padding: 0 50px;
-  }
-
-  .hero__title {
-    padding: 111px 6px 372px 5px;
-    min-width: 650px;
-  }
-
-  .hero__title::before {
-    background-size: 766px;
-    background-position: 52% -43px;
-    background-image: url("../img/hero/hero-desktop.jpg");
-  }
-
-  .hero__list {
-    display: flex;
-    flex-wrap: wrap;
-  }
-
-  .hero__item {
-    width: 50%;
-  }
-
-  .hero__item--inter::after {
-    top: 26%;
-    right: 36px;
-  }
-
-  .hero__item--toy::after {
-    top: 26%;
-    right: 34px;
-  }
-
-  .hero__link {
-    font-size: 20px;
-    line-height: 30px;
-    padding-left: 36px;
-    padding-top: 26px;
-  }
-}
-//desktop//
-@media (min-width: $desktop) {
-  .hero::after {
-    background: url("../img/product/zigzag-fill-desktop.svg") repeat-x;
-    height: 34px;
-    bottom: -20px;
-    left: 0;
-    z-index: 15;
-
-    @media (min-resolution: 2dppx) {
-      background: url("../img/product/zigzag-fill-desktop@2x.svg");
-    }
-  }
-
-  .hero__container {
-    margin: 0 auto;
-    width: 1050px;
-    padding: 0;
-  }
-
-  .hero__title {
-    padding: 112px 6px 356px 21px;
-  }
-
-  .hero__title::before {
-    background-position: 43% -45px;
-  }
-
-  .hero__list {
-    margin-left: 8px;
-  }
-
-}

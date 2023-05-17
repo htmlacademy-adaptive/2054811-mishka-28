@@ -1,3 +1,7 @@
+.main-page {
+  flex: 1;
+}
+
 .main-page__hero {
   margin-bottom: 30px;
 }
@@ -16,6 +20,7 @@
   .main-page__hero {
     margin-bottom: 54px;
   }
+
   .main-page__week-product {
     margin-bottom: 123px;
   }

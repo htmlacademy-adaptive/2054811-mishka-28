@@ -2,18 +2,37 @@
   font-weight: 700;
   font-size: 27px;
   line-height: 30px;
+
+  //@include tablet {
+  // // position: relative;
+  // font-size: 43px;
+  // line-height: 50px;
+  //}
+
+  // @include desktop {
+  //   font-size: 53px;
+  //   line-height: 57px;
+  // }
 }
 
-@media (min-width: $tablet) {
-  .main-title {
-    font-size: 43px;
-    line-height: 50px;
-  }
-}
+// .main-title::after {
+//   @include tablet {
+//     position: absolute;
+//     content: "";
+//     background: url("../img/product/zigzag-fill.svg") repeat-x;
+//     width: 100%;
+//     height: 24px;
+//     bottom: -13px;
+//     left: 0;
+//     background-position-x: center;
+//   }
 
-@media (min-width: $desktop){
-  .main-title {
-    font-size: 53px;
-    line-height: 57px;
-  }
-}
+//   @include desktop {
+//     background: url("../img/product/zigzag-fill-desktop.svg") repeat-x;
+//     height: 34px;
+//     bottom: -20px;
+//     left: 0;
+//     z-index: 15;
+//   }
+// }
+

@@ -16,9 +16,7 @@
         <picture>
           <source media="(min-width: 1150px)" type="image/webp" srcset="./img/header/mishka-logo-desktop.svg">
           <source media="(min-width: 768px)" srcset="./img/header/mishka-logo-tablet.svg">
-          <img src="./img/header/logo.svg" alt="Логотип мазагина игрушек-Мишка." class="logo">
-
-
+          <img src="./img/header/mishka-logo-mobile.svg" alt="Логотип мазагина игрушек-Мишка." class="logo">
         </picture>
       </a>
       <nav class="nav">
@@ -120,9 +118,11 @@
               srcset="./img/catalog/triple-set-mobile.webp 1x, ./img/catalog/triple-set-mobile@2x.webp 2x">
 
             <source media="(min-width:1150px)" srcset="./img/catalog/triple-set-desktop.jpg 1x,
-                                                     ./img/catalog/triple-set-desktop@2x.jpg" width="525" height="636">
+                                                     ./img/catalog/triple-set-desktop@2x.jpg 2x" width="525"
+              height="636">
             <source media="(min-width: 768px)" srcset="./img/catalog/triple-set-tablet.jpg 1x,
-                                                     ./img/catalog/triple-set-tablet@2x.jpg" width="334" height="404">
+                                                     ./img/catalog/triple-set-tablet@2x.jpg 2x" width="334"
+              height="404">
             <img class="week-product__image product-catalog__img" src="./img/catalog/triple-set-mobile.jpg"
               srcset="./img/catalog/triple-set-mobile@2x.jpg" alt=" Большая корзинка." width="260" height="315">
           </picture>
@@ -137,7 +137,7 @@
     <section class="about main-page__about">
       <div class="about__container">
         <h2 class="about__title title">Коротко о нас:</h2>
-        <ul class="about__list list">
+        <ul class="about__list ">
           <li class="about__item about__item--eco">Экологически чистые&nbsp;материалы</li>
           <li class="about__item about__item--scand">Скандинавский стиль по&nbsp;российской цене</li>
           <li class="about__item about__item--like">Увеличивает лайки на&nbsp;фотографиях</li>
@@ -150,8 +150,8 @@
     <section class="review main-page__review">
       <div class="review__container">
         <h2 class="review__title title">Отзывы</h2>
-        <ul class="review__slider-list slider-list list">
-          <li class="slider-list__item ">
+        <ul class="review__slider-list slider-list ">
+          <li class="slider-list__item">
             <p class="slider-list__description">Я молодая мама, но всё равно фотографии не набирали и близко такого
               количества
               лайков,
@@ -168,7 +168,7 @@
               такого
               количества
               лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров
-              и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают
+              и игрушек в Мишке, и мои фотографии сразу стали более&nbsp;стильными, а также набирают
               больше лайков!
             </p>
             <span class="slider-list__name">Екатерина Красильникова</span>
@@ -230,19 +230,20 @@
         </div>
         <div class="map__image-wrap">
           <picture>
-            <source media="(min-width:1150px )"
+            <source media="(min-width:1150px )" type="image/webp"
               srcset="./img/contact/map-desktop.webp 1x, ./img/contact/map-desktop@2x.webp 2x">
-            <source media="(min-width:768px )"
+            <source media="(min-width:768px )" type="image/webp"
               srcset="./img/contact/map-tablet.webp 1x,./img/contact/map-tablet@2x.webp 2x">
-            <source media="(min-width:10px )"
+            <source media="(min-width:10px )" type="image/webp"
               srcset=" ./img/contact/map-mobile.webp 1x,./img/contact/map-mobile@2x.webp 2x ">
 
-            <source media="(min-width:1050px )"
-              srcset="./img/contact/map-desktop.jpg 1x,./img/contact/map-desktop@2x.jpg">
-            <source media="(min-width: 768px)" srcset="./img/contact/map-tablet.jpg 1x, ./img/contact/map-table@2x.jpg">
+            <source media="(min-width: 1050px)"
+              srcset="./img/contact/map-desktop.jpg 1x,./img/contact/map-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)"
+              srcset="./img/contact/map-tablet.jpg 1x, ./img/contact/map-table@2x.jpg 2x">
+            <img src="./img/contact/map-mobile.jpg" srcset="./img/contact/map-mobile@2x.jpg 2x" class="map__image"
+              alt="карта мащазина Мишка г. Санкт-Петербург ул.Большая Конюшенная д.19/8, офис 101">
 
-            <img src="./img/contact/map-mobile.jpg 1x,./img/contact/map-mobile@2x.jpg 2x"
-              alt="карта мащазина Мишка г. Санкт-Петербург ул.Большая Конюшенная д.19/8, офис 101" class="map__image">
           </picture>
         </div>
       </div>

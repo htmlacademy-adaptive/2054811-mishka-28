@@ -6,10 +6,12 @@
   width: 100%;
   resize: none;
   border: 2px solid $light-black;
-  @include desktop{
+
+  @include desktop {
     width: 80%;
   }
 }
+
 .textarea__textarea::placeholder {
   font-size: 17px;
   font-family: inherit;
