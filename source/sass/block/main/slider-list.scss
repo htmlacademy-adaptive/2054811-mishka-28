@@ -1,5 +1,7 @@
 .slider-list {
-  margin-bottom: 2px;
+  @include tablet {
+    padding-top: 40px;
+  }
 }
 
 .slider-list__item {
@@ -21,13 +23,26 @@
   font-size: 17px;
   line-height: 24px;
   color: #000000;
-  margin-bottom: 2px;
+  margin-bottom: 4px;
   display: block;
+
+  @include tablet {
+    margin-top: 61px;
+    font-size: 18px;
+    line-height: 24px;
+  }
+  @include desktop {
+    .slider-list__name {
+      margin-top: 44px;
+      font-size: 17px;
+    }
+  }
 }
 
 .slider-list__email {
   font-size: 17px;
   line-height: 30px;
   display: block;
-  margin-bottom: 29px;
+  margin-bottom: 30px;
 }
+

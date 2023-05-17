@@ -1,0 +1,52 @@
+.conection__input {
+  padding-top: 16px;
+  padding-right: 0;
+  padding-bottom: 17px;
+  border: 0;
+
+  @include tablet {
+    background: $white-gray;
+  }
+}
+
+.conection .form__legend {
+  column-gap: 29px;
+  margin-bottom: 5px;
+}
+
+.conection__input::placeholder {
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 18px;
+}
+
+.conection__input-wrapper {
+  display: flex;
+  align-items: center;
+  border-bottom: 2px solid $light-black;
+
+  @include tablet {
+    width: 100%;
+  }
+
+  @include desktop {
+    width: 77%;
+  }
+}
+
+.conection__svg {
+  margin-left: auto;
+  align-items: center;
+  margin-right: 6px;
+
+  @include tablet {
+    margin-right: 21px;
+  }
+
+  @include desktop {
+    margin-right: 0;
+  }
+}
+.conection__input--mail{
+  padding-top: 13px;
+}

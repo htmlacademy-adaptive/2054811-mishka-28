@@ -17,6 +17,8 @@
   margin-bottom: 20px;
 }
 
+//tablet//
+
 @media (min-width: $tablet) {
   .product-catalog__description-text {
     width: 310px;
@@ -27,26 +29,33 @@
     margin-left: 72px;
     font-size: 20px;
     padding-top: 30px;
-    margin-bottom: 31px;
+    margin-bottom: 32px;
   }
 
   .product-catalog__button {
-    min-width: 286px;
+    min-width: 292px;
     display: inline-block;
   }
+}
 
+@media (min-width: $desktop) {
   .product-catalog__description-text {
-    margin-bottom: 22px;
+    margin-left: 184px;
+    margin-bottom: 33px;
+
+  }
+  .product-catalog__measuare{
+    margin-left: 184px;
+  }
+  .product-catalog__price-description{
+    margin-left: 258px;
+    padding-top: 83px;
+    margin-bottom: 34px;
+
+  }
+  .product-catalog__button{
+    margin-left: 183px;
   }
 
-  // .product-catalog__button::after {
-  //   background: url("../img/product/zigzag-line-desktop.svg");
-  //   height: 17px;
-  //   bottom: -71px;
-
-  //   @media(min-resolution:2dppx){
-  //     background: url("../img/product/zigzag-line-desktop@2x.svg");
-  //   }
-  // }
 }
 

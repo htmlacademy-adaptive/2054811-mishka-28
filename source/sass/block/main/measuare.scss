@@ -8,19 +8,16 @@
 
 .measuare__color {
   width: 107px;
-  // padding-bottom: 14px;
-  //  position: relative;
 }
 
 .measuare__description {
   width: 170px;
-  margin-left: auto;
 }
 
 @media (min-width: $tablet) {
   .measuare {
     width: 330px;
-    padding-top: 19px;
+    padding-top: 22px;
     font-size: 15px;
     line-height: 20px;
   }
@@ -29,7 +26,7 @@
     padding-bottom: 14px;
     border-top: 5px;
   }
-  
+
   .measuare__color {
     width: 98px;
   }

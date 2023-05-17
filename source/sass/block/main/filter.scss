@@ -1,50 +1,17 @@
-.filter-list {
-  display: flex;
-  margin-bottom: 32px;
-}
-.filter__title {
-  width: 165px;
-  font-size: 15px;
-  line-height: 30px;
-  margin: 0 auto 21px;
-  padding-left: 10px;
-}
-
-.filter__group {
-  border: none;
-}
-
-.filter-list__item {
-  padding: 16px 20px;
-  border: 2px solid #444444;
-  min-width: 82px;
-  cursor: pointer;
-}
-
-.filter-list__item--large {
-  margin-left: auto;
-  margin-right: 30px;
-}
-
-.filter-list__item--medium {
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.filter-list__item--small {
-  margin-left: 19px;
-  margin-right: auto;
-}
-
-.filter-list__item--active {
-  border: 2px solid #63d1bb;
-}
-
-.filter-list__label {
-  text-transform: uppercase;
-  text-align: center;
-  display: block;
-  font-size: 17px;
+.filter__legend {
+  margin-right: 43px;
+  font-weight: 700;
+  font-size: 16px;
   line-height: 16px;
+  color: #62d1ba;
+  padding-right: 28px;
+  text-transform: uppercase;
+  margin-bottom: 30px;
 }
 
+.filter__description {
+  position: relative;
+  font-size: 13px;
+  line-height: 24px;
+  margin-bottom: 30px;
+}
