@@ -6,6 +6,7 @@
     grid-template-columns: 1fr 1fr;
     column-gap: 54px;
   }
+
   @include desktop {
     grid-template-columns: 527px 527px;
     column-gap: 47px;
@@ -20,7 +21,7 @@
   @include tablet {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    padding: 92px 50px 0;
+    padding: 94px 50px 0;
     width: 100%;
     grid-column: 1/-1;
   }
@@ -29,8 +30,9 @@
     width: 1050px;
     margin: 0 auto;
     grid-column: 1/2;
-
-    padding: 80px 0px 0 224px;
+    padding-top: 80px;
+    grid-template-columns: 1fr;
+    justify-content: end;
   }
 }
 
@@ -46,7 +48,7 @@
   }
 
   @include desktop {
-    left: 113px;
+    left: 114px;
     top: 62px;
   }
 }
@@ -62,9 +64,13 @@
   }
 
   @include desktop {
-    margin-bottom: 35px;
+    align-self: end;
+    padding-left: 174px;
+    /* padding-top: 79px; */
+    margin: 0;
   }
 }
+
 
 .contact__main-wrapper {
   @include tablet {
@@ -81,6 +87,10 @@
   @include desktop {
     flex-direction: column;
     gap: 27px;
+    grid-row: 2/3;
+    margin-left: 176px;
+    align-self: end;
+    min-height: 150px;
   }
 }
 
@@ -213,13 +223,13 @@
     width: 231px;
     margin: 0 auto;
     grid-column: 1/-1;
-    grid-row: 3/4;
+    grid-row: 4/5;
     min-width: 230px;
   }
 
   @include desktop {
     grid-column: 1/2;
-    grid-row: 2/3;
+    grid-row: 3/4;
     margin-left: 225px;
     font-size: 17px;
     min-width: 230px;

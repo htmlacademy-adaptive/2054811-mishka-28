@@ -30,7 +30,7 @@
   font-size: 17px;
   line-height: 24px;
   margin-bottom: 10px;
-  padding-bottom: 15px;
+  padding-bottom: 19px;
 
   @include tablet {
     font-size: 20px;
@@ -92,7 +92,7 @@
 .process__video-wrapper::after {
   content: "";
   position: absolute;
-  top: 22%;
+  top: 19%;
   left: 50%;
   transform: translateX(-50%);
   background: url("../img/process/play.svg") no-repeat;

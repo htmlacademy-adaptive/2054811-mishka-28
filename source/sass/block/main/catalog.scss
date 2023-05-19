@@ -37,16 +37,18 @@
   font-weight: 700;
   font-size: 17px;
   line-height: 24px;
-  margin-bottom: 5px;
+  margin-bottom: 6px;
 
   @include tablet {
     font-size: 20px;
     line-height: 24px;
-  }
-  @include desktop {
-
+    max-width: 264px;
   }
 }
+@include desktop {
+
+}
+
 
 .catalog__desc {
   font-size: 13px;
@@ -64,12 +66,14 @@
 }
 
 .catalog__desc-wrapper {
-  padding: 21px 29px 25px 28px;
+  padding: 28px 29px 25px 28px;
 
   @include tablet {
     display: flex;
     flex-direction: column;
-    min-height: 334px;
+
+    min-height: 343px;
+
     padding: 29px 0 33px;
   }
 

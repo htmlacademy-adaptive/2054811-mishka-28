@@ -179,9 +179,23 @@
       <div class="process__container">
         <h2 class="process__title">Процесс производства</h2>
         <div class="process__video-wrapper">
-          <video class=" process__video" width="260" height="150" poster="./img/process/video-preview.jpg">
 
-            <span class="visually-hidden">Видео процесса производства корзинок</span>
+          <picture>
+            <source media="(min-widht=1150px)" type="img/webp"
+              srcset="./img/video/video-desktop.webp,./img/video/video-desktop@2x.webp.webp ">
+            <source media="(min-widht=768px)" type="img/webp"
+              srcset="./img/video/video-tablet.webp,./img/video/video-tablet@2x.webp.webp ">
+            <source media="(min-widht=10px)" type="img/webp"
+              srcset="./img/video/video-mobile.webp,./img/video/video-mobile@2x.webp.webp ">
+            <source media="(min-widht=1150px)"
+              srcset="./img/video/video-desktop.jpg 1x,./img/video/video-desktop@2x.jpg 2x, ">
+            <source media="(min-width=768px)"
+              srcset="./img/video/video-tablet.jpg 1x,./img/video/video-tablet@2x.jpg 2x">
+            <img class=" process__video" src="./img/video/video-mobile.jpg" alt="Видео процесса производства корзинок."
+              width="260" height="150" srcset="./img/video/video-mobile@2x.jpg 2x">
+
+          </picture>
+
           </video>
         </div>
         <p class="process__desc">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как
