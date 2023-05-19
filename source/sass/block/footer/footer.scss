@@ -28,9 +28,12 @@
   align-items: center;
 
   @include tablet {
-    width: 203px;
+    width: 218px;
     align-content: center;
     margin: 0;
+  }
+  @include desktop{
+    width: 224px;
   }
 }
 

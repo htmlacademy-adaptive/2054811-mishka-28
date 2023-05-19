@@ -2,9 +2,12 @@
   @include list-reset;
 
   @include tablet {
-    display: flex;
     flex-wrap: wrap;
     gap: 51px;
+  }
+
+  @include desktop {
+    display: flex;
   }
 }
 
@@ -26,10 +29,8 @@
 }
 
 .catalog__img {
-  // margin-bottom: 21px;
-  @include tablet {
-    width: 100%;
-  }
+  width: 100%;
+  display: block;
 }
 
 .catalog__title {

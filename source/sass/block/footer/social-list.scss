@@ -12,14 +12,15 @@
   @include tablet {
     column-gap: 34px;
     width: 155px;
-    margin: 0 111px 0 auto;
+    margin: 0px 91px 0 auto;
     align-content: center;
   }
 
   @include desktop {
-    column-gap: 32px;
+    column-gap: 33px;
     flex-wrap: wrap;
-    width: 392px;
+    width: 183px;
+
   }
 }
 

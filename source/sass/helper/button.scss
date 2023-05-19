@@ -8,11 +8,14 @@
   text-align: center;
   padding: 14px 10px;
   cursor: pointer;
-  min-height: 28px;
+  min-height: 52px;
+  min-width: 260px;
+  display: block;
+  vertical-align: middle;
 
-  // @include tablet {
-  //   font-size: 17px;
-  // }
+  @include tablet {
+    font-size: 17px;
+  }
 }
 
 .button:hover {

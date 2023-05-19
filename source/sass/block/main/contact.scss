@@ -6,6 +6,10 @@
     grid-template-columns: 1fr 1fr;
     column-gap: 54px;
   }
+  @include desktop {
+    grid-template-columns: 527px 527px;
+    column-gap: 47px;
+  }
 }
 
 .contact__container {
@@ -16,7 +20,7 @@
   @include tablet {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    padding: 61px 50px 0;
+    padding: 92px 50px 0;
     width: 100%;
     grid-column: 1/-1;
   }
@@ -25,8 +29,8 @@
     width: 1050px;
     margin: 0 auto;
     grid-column: 1/2;
-    grid-row: 1/3;
-    padding: 81px 36px 0 50px;
+
+    padding: 80px 0px 0 224px;
   }
 }
 
@@ -35,15 +39,15 @@
     position: absolute;
     content: "";
     background: url("../img/contact/flag.svg");
-    right: 56px;
-    top: 38px;
+    right: 53px;
+    top: 69px;
     width: 47px;
     height: 81px;
   }
 
   @include desktop {
-    left: -111px;
-    top: -17px;
+    left: 113px;
+    top: 62px;
   }
 }
 
@@ -51,14 +55,14 @@
   margin-bottom: 30px;
 
   @include tablet {
-    margin-bottom: 50px;
+    margin-bottom: 48px;
     position: relative;
     grid-column: 1/2;
     grid-row: 1/2;
   }
 
   @include desktop {
-    margin-bottom: 30px;
+    margin-bottom: 35px;
   }
 }
 
@@ -70,8 +74,13 @@
     margin-bottom: 49px;
     grid-column: 1/3;
     min-height: 90px;
-    font-size: 14px;
+    font-size: 17px;
     line-height: 30px;
+  }
+
+  @include desktop {
+    flex-direction: column;
+    gap: 27px;
   }
 }
 
@@ -80,20 +89,28 @@
   flex-wrap: wrap;
   align-items: flex-start;
   margin-bottom: 30px;
-  column-gap: 34px;
+
 
   @include tablet {
-    align-content: center;
+    min-height: 90px;
+    margin-bottom: 0;
   }
 
   @include desktop {
-    display: block;
+    display: flex;
     margin-bottom: 0;
+    min-height: 0;
+
   }
 }
 
 .contact__email {
   @include tablet {
+    margin: 0;
+    min-width: 78px;
+  }
+
+  @include desktop {
     margin: 0;
     min-width: 78px;
   }
@@ -110,20 +127,23 @@
   }
 
   @include desktop {
-    padding-top: 29px;
+
   }
 }
 
 .contact__address-wrapper {
   display: flex;
   flex-wrap: wrap;
-  gap: 34px;
+  gap: 32px;
   margin-bottom: 61px;
 
   @include tablet {
     padding-top: 0;
-    gap: 0;
     margin-bottom: 0;
+    column-gap: 27px;
+  }
+  @include desktop {
+    column-gap: 0;
   }
 }
 
@@ -136,7 +156,7 @@
     font-style: normal;
     font-size: 17px;
     line-height: 30px;
-    margin-left: 27px;
+
     width: 222px;
   }
 
@@ -190,20 +210,20 @@
   margin: 0 auto 39px;
 
   @include tablet {
-
-    max-width: 230px;
-    padding: 14px 0;
-    width: 261px;
+    width: 231px;
     margin: 0 auto;
     grid-column: 1/-1;
     grid-row: 3/4;
+    min-width: 230px;
   }
 
   @include desktop {
     grid-column: 1/2;
     grid-row: 2/3;
+    margin-left: 225px;
     font-size: 17px;
     min-width: 230px;
+    min-height: 0;
   }
 }
 

@@ -7,33 +7,57 @@
   }
 
   @include desktop {
-    padding: 0 35px 0 36px;
+    padding: 0;
   }
 }
 
 .week-product::after {
   content: "";
   background: url("../img/product/zigzag.svg") repeat-x;
-  transform: rotate(180deg);
   height: 6px;
   width: 100%;
   position: absolute;
   bottom: -42px;
-  left: 20px;
+  left: 0;
 
   @include tablet {
     background: url("../img/product/zigzag-line-desktop.svg") repeat-x;
     height: 17px;
     bottom: -71px;
     background-position: center;
-
-    @media (min-resolution: 2dppx) {
-      background: url("../img/product/zigzag-line-desktop@2x.svg");
-    }
   }
 
   @include desktop {
     display: none;
+  }
+}
+
+.week-product__container {
+  width: 262px;
+  margin: 0 auto;
+
+  @include tablet {
+    padding: 0;
+    width: 100%;
+  }
+
+  @include desktop {
+    position: relative;
+    margin: 0 auto;
+    width: 1050px;
+  }
+}
+
+.week-product__container::after {
+  @include desktop {
+    content: "";
+    position: absolute;
+    background: url("../img/product/zigzag-line-desktop.svg") repeat-x;
+    height: 23px;
+    width: 100%;
+    bottom: -96px;
+    left: 0;
+    background-position: center;
   }
 }
 
@@ -52,7 +76,6 @@
     line-height: 57px;
     max-width: 600px;
     z-index: 15;
-    margin-left: 30px;
   }
 }
 
@@ -74,8 +97,9 @@
 
   @include desktop {
     order: -1;
-    margin-left: 0;
-    padding-top: 4px;
+    padding: 0;
+    margin: 0;
+    align-self: center;
   }
 }
 
@@ -88,36 +112,21 @@
   @include tablet {
     position: absolute;
     top: 99px;
-    right: 3px;
+    right: 0;
     width: auto;
   }
 
   @include desktop {
-    top: 20px;
-    right: -8px;
-  }
-}
 
-.week-product__container {
-  width: 262px;
-  margin: 0 auto;
-
-  @include tablet {
-    padding: 0;
-    width: 100%;
-  }
-
-  @include desktop {
-    margin: 0 auto;
-    width: 1050px;
-    position: relative;
+    top: 19px;
+    right: 0;
   }
 }
 
 @include tablet {
   .week-product__title-wrapper {
     display: flex;
-    margin-bottom: 31px;
+    margin-bottom: 33px;
     align-content: flex-start;
     flex-wrap: wrap;
   }
@@ -131,24 +140,13 @@
 
 .week-product__title-wrapper {
   @include desktop {
-    padding: 82px 0 0 39px;
+    padding: 80px 0 0 32px;
+    align-items: center;
+    column-gap: 42px;
+    margin-bottom: 36px;
   }
 }
 
-.week-product__container::after {
-  @include desktop {
-    position: absolute;
-    background: url("../img/product/zigzag-line-desktop.svg") repeat-x;
-    content: "";
-    width: 100%;
-    height: 23px;
-    bottom: -95px;
-    left: 9;
-    background-position: center;
 
-    @media (min-resolution: 2dppx) {
-      background: url("../img/product/zigzag-line-desktop@2x.svg");
-    }
-  }
-}
+
 

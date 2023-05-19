@@ -4,6 +4,7 @@
 @import "./helper/visually-hidden.scss";
 @import "./helper/fonts.scss";
 @import "./helper/variables.scss";
+@import "./helper/mixin.scss";
 @import "./helper/global.scss";
 @import "./helper/link.scss";
 @import "./helper/main-title.scss";
@@ -12,7 +13,7 @@
 @import "./helper/button.scss";
 @import "./block/body-page.scss";
 @import "./helper/list-label.scss";
-@import "./helper/mixin.scss";
+
 @import "./block/main/radio.scss";
 @import "./block/main/checkbox.scss";
 @import "./block/main/name.scss";
