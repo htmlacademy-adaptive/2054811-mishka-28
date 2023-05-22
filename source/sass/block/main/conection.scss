@@ -10,6 +10,9 @@
 
   @include tablet {
     background: $white-gray;
+    font-size: 19px;
+    line-height: 18px;
+    padding-left: 17px;
   }
 }
 
@@ -28,7 +31,7 @@
   }
 
   @include desktop {
-    width: 77%;
+    width: 76%;
   }
 }
 
@@ -58,4 +61,9 @@
 .conection__input:active {
   outline: 0;
   border-color: #62d1ba;
+}
+
+.conection__input:hover .conection__svg,
+.conection__input:active .conection__svg{
+  color: #62d1ba;
 }

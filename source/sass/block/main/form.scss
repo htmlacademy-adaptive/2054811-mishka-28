@@ -10,6 +10,11 @@
   @include tablet {
     padding-top: 68px;
   }
+
+  @include desktop {
+    width: 1050px;
+    margin: 0 auto;
+  }
 }
 
 .form__description {
@@ -27,9 +32,10 @@
   }
 
   @include desktop {
-    width: 680px;
-    padding: 46px 0 0;
-    margin: 5px auto 68px;
+    width: 705px;
+    padding: 50px 3px 0 23px;
+    margin: 0px auto 68px 153px;
+    text-align: left;
   }
 }
 
@@ -47,7 +53,7 @@
 
   @include desktop {
     padding: 0;
-    width: 908px;
+    width: 920px;
     margin: 0 auto 17px;
   }
 }
@@ -64,12 +70,15 @@
   margin-bottom: 33px;
 
   @include tablet {
-    padding-top: 50px;
+    padding-top: 44px;
     padding-bottom: 23px;
     margin-bottom: 0;
   }
-}
 
+  @include desktop  {
+    padding-bottom: 34px;
+  }
+}
 
 .form__legend {
   position: relative;
@@ -86,12 +95,12 @@
 
   @include tablet {
     margin-right: 167px;
-    padding-top: 19px;
+    padding-top: 24px;
     width: 0;
   }
 
   @include desktop {
-    padding-top: 14px;
+    padding-top: 27px;
     margin-right: 113px;
   }
 }
@@ -141,8 +150,8 @@
   margin-bottom: 25px;
 
   @include tablet {
-    padding-right: 35px;
-    margin-bottom: 29px;
+    padding-right: 51px;
+    margin-bottom: 20px;
   }
 
   @include desktop {
@@ -152,6 +161,10 @@
 
 .form__legend--additional {
   margin-bottom: 24px;
+}
+
+.form__legend--radio {
+  padding-top: 12px;
 }
 
 .form__fieldset--mail {
@@ -167,7 +180,7 @@
 
   @include tablet {
     padding-top: 41px;
-    padding-right: 36px;
+    padding-right: 51px;
   }
 
   @include desktop {
@@ -214,7 +227,7 @@
     display: flex;
     justify-content: space-between;
     padding-left: 50px;
-    padding-right: 35px;
+    padding-right: 51px;
     padding-top: 45px;
     width: 100%;
   }

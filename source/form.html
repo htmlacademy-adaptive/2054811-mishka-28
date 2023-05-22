@@ -5,6 +5,14 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="favicon.ico"> <!-- 32×32 -->
+  <link rel="icon" href="./img/favicons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="./img/favicons/apple.png">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="preload" href="fonts/opensans.woff" as="font">
+  <link rel="preload" href="fonts/opensans.woff2" as="font">
+  <link rel="preload" href="fonts/opensansbold.woff" as="font">
+  <link rel="preload" href="fonts/opensansbold.woff2" as="font">
   <link rel="stylesheet" href="./css/style.min.css">
   <title>Форма заказа</title>
 </head>
@@ -76,8 +84,8 @@
           свяжемся с
           вами, чтобы уточнить детали.</p>
         <form class="form__filter filter" action="https://echo.htmlacademy.ru/" method="get">
-          <div class="form__fieldset" role="group" aria-labelledby="pseudolegend-radio">
-            <h3 id="pseudolegend-radio" class="form__legend">тип</h3>
+          <div class="form__fieldset form__fieldset--radio" role="group" aria-labelledby="pseudolegend-radio">
+            <h3 id="pseudolegend-radio" class="form__legend form__legend--radio">тип</h3>
             <ul class="form__list form__list--radio">
               <li class="form__item radio">
                 <input class="radio__input visually-hidden" name="type" type="radio" value="accessory" id="accessory"

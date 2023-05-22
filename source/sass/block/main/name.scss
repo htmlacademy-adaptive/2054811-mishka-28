@@ -6,7 +6,7 @@
   @include list-reset;
 
   @include tablet {
-    padding-top: 5px;
+
   }
 
   @include desktop {
@@ -20,13 +20,13 @@
   @include tablet {
     display: flex;
     align-items: center;
-    column-gap: 25px;
+    column-gap: 26px;
     width: 501px;
-    margin-bottom: 26px;
+    margin-bottom: 15px;
   }
 
   @include desktop {
-    width: 88%;
+    width: 86%;
   }
 }
 
@@ -54,17 +54,13 @@
   border-left: transparent;
   border-right: transparent;
   width: 100%;
-}
-
-.name__input::placeholder {
-  font-weight: 400;
-  font-size: 17px;
-  line-height: 18px;
   font-family: "Open Sans";
 
   @include tablet {
-    font-size: 17px;
-    padding-left: 15px;
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 18px;
+    padding-left: 17px;
   }
 }
 
