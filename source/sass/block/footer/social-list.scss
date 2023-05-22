@@ -6,20 +6,22 @@
   column-gap: 33px;
   flex-wrap: wrap;
   width: 142px;
-  margin: 0px  auto 46px;
+  margin: 0  auto 46px;
 
 
   @include tablet {
     column-gap: 34px;
     width: 155px;
-    margin: 0 111px 0 auto;
+    margin: 0 87px 0 auto;
     align-content: center;
   }
 
   @include desktop {
-    column-gap: 32px;
+    column-gap: 33px;
     flex-wrap: wrap;
-    width: 392px;
+    width: 183px;
+    margin: 0 auto;
+
   }
 }
 
@@ -46,4 +48,8 @@
   color: #46c1ae;
 }
 
+.social-list__svg:active {
+  color: #46c1ae;
+  opacity: 0.3;
+}
 

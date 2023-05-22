@@ -6,13 +6,21 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Каталог</title>
+  <link rel="icon" href="favicon.ico"> <!-- 32×32 -->
+  <link rel="icon" href="./img/favicons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="./img/favicons/apple.png">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="preload" href="fonts/opensans.woff" as="font">
+  <link rel="preload" href="fonts/opensans.woff2" as="font">
+  <link rel="preload" href="fonts/opensansbold.woff" as="font">
+  <link rel="preload" href="fonts/opensansbold.woff2" as="font">
   <link rel="stylesheet" href="./css/style.min.css">
 </head>
 
 <body class="body-page">
-  <header class="header">
+  <header class="header body-page__header">
     <div class="header__container">
-      <a href="index.html" class="header__logo logo">
+      <a href="index.html" class="header__logo">
         <picture>
           <source media="(min-width: 1150px)" srcset="./img/header/mishka-logo-desktop.svg">
           <source media="(min-width: 768px)" srcset="./img/header/mishka-logo-tablet.svg">
@@ -64,22 +72,22 @@
       </nav>
     </div>
   </header>
-  <main class="catalog-main  hero">
-    <h1 class="catalog-main__title main-title">Каталог товаров</h1>
+  <main class="catalog-main">
+    <h1 class="catalog-main__title main-title body-page__title">Каталог товаров</h1>
     <section class="catalog">
       <div class="catalog-main__container">
         <ul class="catalog__list">
           <li class="catalog__item ">
 
             <picture>
-              <source media="(min-width: 1050px)" type="image/webp"
+              <source media="(min-width: 1150px)" type="image/webp"
                 srcset="./img/catalog/photo1-desktop.webp 1x,./img/catalog/photo1-desktop@2x.webp 2x">
               <source media="(min-width: 768px)" type="image/webp"
-                srcset="./img/catalog/photo1-tablet.webp 1x,./img/catalog/photo1-tablet.@xwebp 2x">
+                srcset="./img/catalog/photo1-tablet.webp 1x,./img/catalog/photo1-tablet@2x.webp 2x">
               <source media="(min-width: 10px)" type="image/webp"
                 srcset="./img/catalog/photo1.webp 1x,./img/catalog/photo1-mobile@2x.webp 2x">
 
-              <source media="(min-width: 1050px)"
+              <source media="(min-width: 1150px)"
                 srcset="./img/catalog/photo1-desktop.jpg 1x,./img/catalog/photo1-desktop@2x.jpg 2x">
               <source media="(min-width: 768px)"
                 srcset="./img/catalog/photo1-tablet.jpg 1x,./img/catalog/photo1-tablet@2x.jpg 2x">
@@ -106,21 +114,20 @@
           </li>
           <li class="catalog__item">
             <picture>
-              <source media="(min-width: 1050px)" type="image/webp"
+              <source media="(min-width: 1150px)" type="image/webp"
                 srcset="./img/catalog/photo2-desktop.webp 1x,./img/catalog/photo2-desktop@2x.webp 2x">
               <source media="(min-width: 768px)" type="image/webp"
-                srcset="./img/catalog/photo2-tablet.webp 1x,./img/catalog/photo2-tablet.@xwebp 2x">
+                srcset="./img/catalog/photo2-tablet.webp 1x,./img/catalog/photo2-tablet@2x.webp 2x">
               <source media="(min-width: 10px)" type="image/webp"
                 srcset="./img/catalog/photo2.webp 1x,./img/catalog/photo2-mobile@2x.webp 2x">
 
-              <source media="(min-width: 1050px)"
+              <source media="(min-width: 1150px)"
                 srcset="./img/catalog/photo2-desktop.jpg 1x, ./img/catalog/photo2-desktop@2x.jpg 2x">
               <source media="(min-width: 768px)"
                 srcset="./img/catalog/photo2-tablet.jpg 1x, ./img/catalog/photo2-tablet@2x.jpg 2x">
               <img class="catalog__img" src="./img/catalog/photo2.jpg" alt="Вязанная корзинка."
                 srcset="./img/catalog/photo2-mobile@2x.jpg 2x" width="260" height="195">
             </picture>
-
             <div class="catalog__desc-wrapper">
               <h2 class="catalog__title">Корзинка для белья</h2>
               <p class="catalog__desc">Диаметр 15 см, высота 10 см</p>
@@ -140,14 +147,13 @@
           </li>
           <li class="catalog__item">
             <picture>
-              <source media="(min-width: 1050px)" type="image/webp"
-                srcset=" ./img/catalog/photo3.webp 1x,./img/catalog/photo3@2x.webp 2x">
+              <source media="(min-width: 1150px)" type="image/webp"
+                srcset=" ./img/catalog/photo3-desktop.webp 1x, ./img/catalog/photo3-desktop@2x.webp 2x">
               <source media="(min-width: 768px)" type="image/webp"
-                srcset="./img/catalog/photo3.webp 1x,./img/catalog/photo3@2x.webp 2x">
+                srcset="./img/catalog/photo3-tablet.webp 1x, ./img/catalog/photo3-tablet@2x.webp 2x">
               <source media="(min-width: 10px)" type="image/webp"
                 srcset="./img/catalog/photo3.webp 1x,./img/catalog/photo3@2x.webp 2x">
-
-              <source media="(min-width: 1050px)"
+              <source media="(min-width: 1150px)"
                 srcset="./img/catalog/photo3-desktop.jpg 1x,./img/catalog/photo3-desktop@2x.jpg 2x">
               <source media="(min-width: 768px)"
                 srcset="./img/catalog/photo3-tablet.jpg 1x,./img/catalog/photo3-tablet@2x.jpg 2x">
@@ -178,11 +184,23 @@
       <div class="process__container">
         <h2 class="process__title">Процесс производства</h2>
         <div class="process__video-wrapper">
-          <video class=" process__video" width="260" height="150" poster="./img/process/video-preview.jpg">
-            <!-- <source src="#" type="video/mp4">
-            <source src="#" type="video/ogg"> -->
-            <span class="visually-hidden">Видео процесса производства корзинок</span>
-          </video>
+          <picture>
+            <source media="(min-width:1150px)" type="image/webp"
+              srcset="./img/video/video-desktop.webp, ./img/video/video-desktop@2x.webp ">
+            <source media="(min-width:768px)" type="image/webp"
+              srcset="./img/video/video-tablet.webp, ./img/video/video-tablet@2x.webp ">
+            <source media="(min-width:10px)" type="image/webp"
+              srcset="./img/video/video-mobile.webp, ./img/video/video-mobile@2x.webp">
+            <source media="(min-width:1150px)"
+              srcset="./img/video/video-desktop.jpg 1x, ./img/video/video-desktop@2x.jpg 2x, ">
+            <source media="(min-width:768px)"
+              srcset="./img/video/video-tablet.jpg 1x, ./img/video/video-tablet@2x.jpg 2x">
+            <img class="process__video" src="./img/" alt="Видео процесса производства корзинок." width="260"
+              height="150" srcset="./img/video/video-mobile@2x.jpg 2x">
+          </picture>
+          <button class="process__button--play">
+            <span class="visually-hidden">Воспроизвести видео </span>
+          </button>
         </div>
         <p class="process__desc">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как
           появляются наши товары.</p>
@@ -193,8 +211,10 @@
   <footer class="footer">
     <div class="footer__container">
       <div class="footer__wrapper">
-        <a href="./img/footer/logo-footer.svg" class="footer__wrapper-logo footer__wrapper-logo--hidden">
-          <img src="./img/footer/logo-footer.svg" alt="Логотип магазина Мишка." width="102" height="34">
+        <a href="#" class="footer__wrapper-logo footer__wrapper-logo--hidden">
+          <svg xmlns="http://www.w3.org/2000/svg" width="102" height="34" fill="none">
+            <use href="./img/sprite.svg#logo-footer"></use>
+          </svg>
         </a>
         <span class="visually-hidden">Логотип Магазина вязанных игрушек Мишка</span>
         <ul class="footer__social-list social-list">
@@ -228,12 +248,10 @@
         </ul>
         <div class="footer__dev">
           <span class="footer__dev-description">Разработано</span>
-          <a href="https://htmlacademy.ru" class="footer-dev__logo">
-            <svg class="footer__dev-logo" width="27" height="34" viewBox="0 0 27 34" fill="none"
+          <a href="https://htmlacademy.ru" class="footer__dev-logo">
+            <svg class="footer__dev-svg" width="27" height="34" viewBox="0 0 27 34" fill="none"
               xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M13.76 0h-.1L.22 1.4v24.62L13.66 34 27 26.02V1.4L13.76 0ZM25.1 12.06 13.66 5.28v-.1h-.1l-.1-.1v.1L2.11 12.06V3.1l11.45-1.2 11.55 1.2v8.97ZM13.56 6.78l11.45 6.68-4.48 2.6-7.07-4.2v1.4l5.87 3.5-.9.49-4.97-3v1.4l3.78 2.3-.8.5-2.98-1.8v1.4l1.9 1.1-1.8 1.1-11.35-6.69 11.35-6.78ZM2.11 15.06l11.35 6.78v1l-7.87-4.7v1.4l7.97 4.79v1.1l-7.97-4.7v1.4l7.97 4.8 8.06-4.9v-5.18l3.39-2v9.98L13.56 31.7 2.11 24.93v-9.87Z"
-                fill="currentColor" />
+              <use href="./img/sprite.svg#htmlacademy"> </use>
             </svg>
 
             <span class="visually-hidden">Логотип HTML Academy</span>

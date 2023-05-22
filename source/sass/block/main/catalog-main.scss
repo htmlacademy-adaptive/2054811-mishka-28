@@ -4,34 +4,34 @@
 
 .catalog-main__title {
   margin-bottom: 30px;
-  padding: 74px 34px 73px 41px;
+  padding: 74px 34px 72px 41px;
 
   @include tablet {
     padding: 56px 34px 73px 41px;
     text-align: center;
     margin-bottom: 80px;
-
   }
+
   @include desktop {
-    margin-bottom: 111px;
-
+    padding-left: 34px;
+    margin-bottom: 153px;
   }
 }
-@include desktop {
 
-}
 .catalog-main__container {
   padding-left: 30px;
   padding-right: 30px;
+  margin-bottom: 53px;
 
   @include tablet {
     padding-left: 50px;
     padding-right: 50px;
+    margin-bottom: 50px;
   }
 
   @include desktop {
     width: 1050px;
-    margin: 0px auto 48px;
+    margin: 0 auto 58px;
     padding: 0;
   }
 }

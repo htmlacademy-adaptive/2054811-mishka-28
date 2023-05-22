@@ -1,5 +1,5 @@
 .button {
-  background: #ffffff;
+  background: $white;
   border: 2px solid #444444;
   font-weight: 700;
   font-size: 18px;
@@ -8,14 +8,19 @@
   text-align: center;
   padding: 14px 10px;
   cursor: pointer;
-  min-height: 28px;
+  display: block;
 
-  // @include tablet {
-  //   font-size: 17px;
-  // }
+  @include tablet {
+    font-size: 17px;
+  }
 }
 
 .button:hover {
-  background: #444444;
+  background: $light-black;
   color: $white;
+}
+
+button:active {
+  color: $white;
+  opacity: 0.3;
 }

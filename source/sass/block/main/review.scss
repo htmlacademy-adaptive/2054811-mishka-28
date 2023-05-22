@@ -1,5 +1,6 @@
 .review {
   padding: 0 31px;
+  position: relative;
 
   @include tablet {
     padding: 0;
@@ -8,82 +9,76 @@
 }
 
 .review::after {
+  content: "";
+  background: url("../img/product/zigzag.svg") repeat-x;
+  height: 6px;
+  width: 100%;
+  position: absolute;
+  bottom: -50px;
+  left: 0;
+
   @include tablet {
-    position: absolute;
-    content: "";
-    background: url("../img/product/zigzag-line-desktop.svg");
+    background: url("../img/product/zigzag-line-desktop.svg") repeat-x;
     height: 17px;
-    width: 100%;
-    bottom: -82px;
-    left: 0;
+    bottom: -114px;
     background-position: center;
   }
 
   @include desktop {
     display: none;
-
   }
 }
 
 .review__container {
   width: 262px;
   margin: 0 auto;
+
   @include tablet {
     width: 100%;
     display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: auto minmax(225px, auto) 1fr;
-    padding: 23px 51px 18px 51px;
+    grid-template-columns: 74% 26%;
+    padding: 22px 51px 18px;
+    row-gap: 41px;
   }
 
   @include desktop {
     position: relative;
     width: 1050px;
     margin: 0 auto;
-    padding: 23px 0 0 183px;
-    grid-template-columns: 50% 51%;
+    grid-template-columns: auto 174px;
+    row-gap: 35px;
+    padding: 0;
+    padding-left: 174px;
   }
 }
 
 .review__container::after {
   @include desktop {
-    position: absolute;
     content: "";
+    position: absolute;
     background: url("../img/product/zigzag-line-desktop.svg") repeat-x;
-    height: 23px;
+    height: 17px;
     width: 100%;
-    bottom: -126px;
-    left: 50%;
-    transform: translateX(-50%);
+    bottom: -152px;
+    left: 0;
     background-position: center;
   }
 }
 
 .review__title {
+  padding-bottom: 15px;
+
   @include tablet {
     grid-column: 1/2;
-    grid-row: 1/2;
+    margin: 0;
     position: relative;
-    padding-top: 3px;
-  }
-}
-
-.review__title::after {
-  @include tablet {
-    position: absolute;
-    content: "";
-    background-image: url("../img/review/review.jpg");
-    width: 350px;
-    height: 457px;
-    z-index: -6;
-    top: -78px;
-    left: -50px;
+    padding: 0;
+    align-self: end;
   }
 
   @include desktop {
-    .review__title::after {
-      left: -175px;
-    }
+
+
   }
 }
 
@@ -95,42 +90,45 @@
   border: 1px solid $light-gray;
 
   @include tablet {
-    grid-column: 2/3;
-    grid-row: 3/4;
-    width: 176px;
-    align-self: self-start;
-    justify-self: self-end;
-    margin: -2px -11px 0 0;
-    border: none;
+    position: absolute;
+    width: 137px;
+    right: 70px;
+    bottom: -19px;
+    border: 0;
   }
 
   @include desktop {
-    grid-row: 2/3;
-    align-self: self-end;
+    right: 19px;
+    bottom: -4px;
   }
 }
 
 .review__sliders-button {
   background-color: transparent;
-  display: block;
-  padding: 11px 40px 9px 36px;
+
+  min-height: 52px;
+  min-width: 130px;
   border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   @include tablet {
-    padding: 14px 31px 9px 6px;
+    min-width: 0;
     border: none;
   }
 }
 
-.review__sliders--prev {
+.review__sliders-button--prev {
   margin-right: 0;
   border-right: 1px solid $light-gray;
+
   @include tablet {
     border: none;
   }
 }
 
-.review__sliders--next {
+.review__sliders-button--next {
   margin-left: auto;
 
   svg {
@@ -139,7 +137,7 @@
 }
 
 .review__button {
-  margin-bottom: 82px;
+
   position: relative;
 
   @include tablet {
@@ -148,7 +146,13 @@
     padding: 14px 36px;
     margin-left: auto;
     margin-bottom: 0;
+    min-width: 175px;
+    align-self: start;
+  }
 
+  @include desktop {
+    grid-row: 1/2;
+    align-self: start;
   }
 }
 
@@ -156,10 +160,13 @@
   opacity: 0.6;
 }
 
+.review__sliders-button:active {
+  opacity: 0.3;
+}
+
 .review__slider-list {
   @include tablet {
     grid-column: 1/-1;
-    grid-row: 2/4;
   }
 
   @include desktop {

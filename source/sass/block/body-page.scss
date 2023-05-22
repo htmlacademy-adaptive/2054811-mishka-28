@@ -10,6 +10,31 @@
   background-color: $white;
 }
 
+.body-page__header {
+  background: #f1f1f1;
+
+}
+
+.body-page--index .body-page__header {
+  @include tablet {
+    background: #fbfbfb;
+  }
+}
+
+.body-page__title {
+  @include tablet {
+    background: #f1f1f1;
+  }
+}
+
+
+.body-page--index  .body-page__title {
+  @include tablet {
+    background: none;
+  }
+}
+
+
 @media (min-width: $tablet) {
   .body-page {
     font-size: 17px;

@@ -1,22 +1,26 @@
 .catalog__list {
   @include list-reset;
+  display: flex;
+  flex-direction: column;
+  gap: 49px;
 
   @include tablet {
-    display: flex;
     flex-wrap: wrap;
-    gap: 51px;
+    gap: 53px;
+  }
+
+  @include desktop {
+    flex-direction: row;
+    gap: 50px;
   }
 }
 
 .catalog__item {
-  margin-bottom: 30px;
   border: 1px solid $light-gray;
 
   @include tablet {
     display: flex;
     flex-wrap: wrap;
-    column-gap: 33px;
-    margin-bottom: 43px;
   }
 
   @include desktop {
@@ -25,32 +29,50 @@
   }
 }
 
-.catalog__img {
-  // margin-bottom: 21px;
+.catalog__link {
   @include tablet {
-    width: 100%;
+    padding: 20px;
   }
+}
+
+.catalog__svg {
+  color: $black;
+  opacity: 0.2;
+}
+
+.catalog__link:hover .catalog__svg {
+  opacity: 1;
+  color: $acqua;
+}
+
+.catalog__link:active .catalog__svg {
+  color: $acqua;
+  opacity: 0.3;
+}
+
+.catalog__img {
+  width: 100%;
+  display: block;
 }
 
 .catalog__title {
   font-weight: 700;
   font-size: 17px;
   line-height: 24px;
-  margin-bottom: 5px;
+  margin-bottom: 6px;
 
   @include tablet {
     font-size: 20px;
     line-height: 24px;
-  }
-  @include desktop {
-
+    max-width: 264px;
   }
 }
 
 .catalog__desc {
   font-size: 13px;
   line-height: 30px;
-  margin-bottom: 42px;
+  margin-bottom: 41px;
+  position: relative;
 
   @include tablet {
     font-size: 15px;
@@ -63,34 +85,61 @@
 }
 
 .catalog__desc-wrapper {
-  padding: 21px 29px 25px 28px;
+  padding: 29px 12px 4px 28px;
 
   @include tablet {
     display: flex;
     flex-direction: column;
-    min-height: 334px;
-    padding: 29px 0 33px;
+    flex-grow: 1;
+    padding: 27px 12px 4px 32px;
   }
 
   @include desktop {
-    padding: 23px 0 33px 29px;
+    padding: 29px 12px 0px 28px;
     min-height: 197px;
+    row-gap: 5px;
   }
 }
 
+.catalog__desc-wrapper:hover {
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+}
+
+
 .catalog__price-wrapper {
+  position: relative;
   display: flex;
   justify-content: space-between;
-
 
   @include tablet {
     flex-grow: 1;
     align-items: flex-end;
   }
+
   @include desktop {
     flex-grow: 0;
+    align-items: center;
+  }
+}
+
+.catalog__price-wrapper::before {
+  position: absolute;
+  content: "";
+  border-bottom: 1px solid $light-gray;
+  width: 204px;
+  height: 1px;
+  top: -17px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  @include tablet {
+    width: 265px;
+    top: 132px;
   }
 
+  @include desktop {
+    top: 10px;
+  }
 }
 
 .catalog__price {
@@ -100,5 +149,9 @@
 
   @include tablet {
     font-size: 17px;
+    padding-bottom: 20px;
+  }
+  @include desktop {
+    align-self: center;
   }
 }

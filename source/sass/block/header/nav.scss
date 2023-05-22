@@ -49,10 +49,11 @@
 
   .nav--closed .nav__list,
   .nav__list {
-    display: grid;
-    grid-template-columns: 167px 152px minmax(84px, auto) minmax(298px, auto);
-    grid-template-rows: minmax(88px, auto) minmax(45px, auto);
-    margin: 0;
+    @include tablet {
+      display: grid;
+      grid-template-columns: 167px 152px 84px 298px;
+      margin: 0;
+    }
   }
 }
 
@@ -61,7 +62,7 @@
   .nav__list {
     display: grid;
     grid-template-columns: 220px 183px 298px minmax(82px, auto) minmax(290px, auto);
-    grid-template-rows: minmax(88px, auto) minmax(45px, auto);
+
     margin: 0;
   }
 

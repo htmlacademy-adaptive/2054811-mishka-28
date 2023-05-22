@@ -6,30 +6,30 @@
   }
 }
 
-// .hero::after {
-//   @include tablet {
-//     position: absolute;
-//     content: "";
-//     background: url("../img/product/zigzag-fill.svg") repeat-x;
-//     width: 100%;
-//     height: 24px;
-//     bottom: -13px;
-//     left: 0;
-//     background-position-x: center;
-//   }
+.hero__title.main-title::after {
+  display: none;
+}
 
-//   @include desktop {
-//     background: url("../img/product/zigzag-fill-desktop.svg") repeat-x;
-//     height: 34px;
-//     bottom: -20px;
-//     left: 0;
-//     z-index: 15;
+.hero::after {
+  @include tablet {
+    position: absolute;
+    content: "";
+    background: url("../img/product/zigzag-fill.svg") repeat-x;
+    width: 100%;
+    height: 24px;
+    bottom: -11px;
+    left: 0;
+    background-position-x: center;
+  }
 
-//     @media (min-resolution: 2dppx) {
-//       background: url("../img/product/zigzag-fill-desktop@2x.svg");
-//     }
-//   }
-// }
+  @include desktop {
+    background: url("../img/product/zigzag-fill-desktop.svg") repeat-x;
+    height: 34px;
+    bottom: -16px;
+    left: 0;
+    z-index: 15;
+  }
+}
 
 .hero__container {
   @include tablet {
@@ -57,7 +57,7 @@
   }
 
   @include desktop {
-    padding: 112px 6px 356px 21px;
+    padding: 114px 6px 356px 5px;
   }
 }
 
@@ -82,7 +82,7 @@
   }
 
   @include desktop {
-    background-position: 43% -45px;
+    background-position: 50% -45px;
   }
 }
 
@@ -99,6 +99,7 @@
   }
 
   @include desktop {
+    z-index: 5;
   }
 }
 
@@ -109,6 +110,17 @@
   @include tablet {
     width: 50%;
   }
+}
+
+.hero__item:hover {
+  transform: translateY(-5px);
+
+}
+.hero__item:focus {
+
+}
+.hero__item:active{
+
 }
 
 .hero__item--inter {
@@ -162,6 +174,10 @@
     line-height: 30px;
     padding-left: 36px;
     padding-top: 26px;
+  }
+
+  @include desktop {
+    width: 138px;
   }
 }
 

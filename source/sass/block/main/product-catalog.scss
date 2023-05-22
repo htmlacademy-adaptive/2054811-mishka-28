@@ -1,6 +1,10 @@
 
 .product-catalog__measuare {
   margin-bottom: 26px;
+
+  @include desktop {
+    margin-left: 174px;
+  }
 }
 
 .product-catalog__price-description {
@@ -9,22 +13,8 @@
   line-height: 24px;
   text-align: center;
   margin-bottom: 24px;
-}
 
-.product-catalog__description-text {
-  width: 260px;
-  margin-right: auto;
-  margin-bottom: 20px;
-}
-
-//tablet//
-
-@media (min-width: $tablet) {
-  .product-catalog__description-text {
-    width: 310px;
-  }
-
-  .product-catalog__price-description {
+  @include tablet {
     text-align: left;
     margin-left: 72px;
     font-size: 20px;
@@ -32,30 +22,36 @@
     margin-bottom: 32px;
   }
 
-  .product-catalog__button {
-    min-width: 292px;
-    display: inline-block;
+  @include desktop {
+    margin-left: 250px;
+    padding-top: 83px;
+    margin-bottom: 34px;
   }
 }
 
-@media (min-width: $desktop) {
-  .product-catalog__description-text {
-    margin-left: 184px;
-    margin-bottom: 33px;
+.product-catalog__description-text {
+  width: 260px;
+  margin-right: auto;
+  margin-bottom: 20px;
 
-  }
-  .product-catalog__measuare{
-    margin-left: 184px;
-  }
-  .product-catalog__price-description{
-    margin-left: 258px;
-    padding-top: 83px;
-    margin-bottom: 34px;
-
-  }
-  .product-catalog__button{
-    margin-left: 183px;
+  @include tablet {
+    width: 310px;
   }
 
+  @include desktop {
+    margin-left: 175px;
+    margin-bottom: 32px;
+  }
+}
+
+.product-catalog__button {
+  @include tablet {
+    min-width: 292px;
+    display: inline-block;
+  }
+
+  @include desktop {
+    margin-left: 175px;
+  }
 }
 

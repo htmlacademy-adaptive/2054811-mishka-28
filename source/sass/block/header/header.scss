@@ -2,10 +2,9 @@
   position: relative;
   padding-top: 79px;
   z-index: 10;
-  
+
   @include tablet {
     padding: 0;
-    background: #fbfbfb;
   }
 }
 
@@ -13,7 +12,6 @@
   @include tablet {
     content: "";
     min-height: 89px;
-    // height: 100%;
     width: 100%;
     background-color: #ffffff;
     position: absolute;
@@ -28,6 +26,7 @@
   left: 50%;
   top: 22px;
   transform: translateX(-50%);
+  z-index: 10;
 
   @include tablet {
     left: 48px;
@@ -44,6 +43,13 @@
 
 
 .header__logo:hover {
+  opacity: 0.6;
+}
+.header__logo:focus {
+
+}
+
+.header__logo:active {
   opacity: 0.3;
 }
 
@@ -53,9 +59,8 @@
   }
 
   @include desktop {
-    min-width: $desktop;
+    width: 1050px;
     margin: 0 auto;
-    padding: 0 50px;
   }
 }
 
