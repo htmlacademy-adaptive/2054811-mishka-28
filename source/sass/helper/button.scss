@@ -1,5 +1,5 @@
 .button {
-  background: #ffffff;
+  background: $white;
   border: 2px solid #444444;
   font-weight: 700;
   font-size: 18px;
@@ -8,8 +8,6 @@
   text-align: center;
   padding: 14px 10px;
   cursor: pointer;
-  min-height: 52px;
-  // min-width: 260px;
   display: block;
 
   @include tablet {
@@ -18,6 +16,11 @@
 }
 
 .button:hover {
-  background: #444444;
+  background: $light-black;
   color: $white;
+}
+
+button:active {
+  color: $white;
+  opacity: 0.3;
 }

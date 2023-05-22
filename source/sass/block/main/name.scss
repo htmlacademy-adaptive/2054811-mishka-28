@@ -60,10 +60,17 @@
   font-weight: 400;
   font-size: 17px;
   line-height: 18px;
+  font-family: "Open Sans";
 
   @include tablet {
     font-size: 17px;
     padding-left: 15px;
   }
+}
+
+.name__input:hover,
+.name__input:active {
+  outline: 0;
+  border-color: #62d1ba;
 }
 

@@ -25,10 +25,10 @@
 }
 
 .main-page__review {
-  margin-bottom: 86px;
+  margin-bottom: 88px;
 
   @include tablet {
-    margin-bottom: 91px;
+    margin-bottom: 123px;
   }
 
   @include desktop {
@@ -36,19 +36,13 @@
   }
 }
 
-.contact__map {
-  margin-bottom: 38px;
-  @include tablet {
-
-  }
-}
 .main-page__contact {
-
-  @include tablet{
+  @include tablet {
     margin-bottom: 55px;
   }
+
   @include desktop {
-    margin-bottom: 107px;
+    margin-bottom: 65px;
   }
 }
 

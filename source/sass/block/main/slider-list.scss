@@ -1,10 +1,5 @@
 .slider-list {
-  @include tablet {
-    padding-top: 36px;
-  }
-  @include desktop {
-    padding-top: 35px;
-  }
+
 }
 
 .slider-list__item {
@@ -16,13 +11,12 @@
 }
 
 .slider-list__description {
-  margin-bottom: 33px;
+  margin-bottom: 34px;
   width: 260px;
   line-height: 30px;
 
   @include tablet {
     width: 100%;
-
   }
 }
 
@@ -39,6 +33,7 @@
     font-size: 18px;
     line-height: 24px;
   }
+
   @include desktop {
     margin-top: 44px;
     font-size: 17px;
@@ -49,7 +44,7 @@
   font-size: 17px;
   line-height: 30px;
   display: block;
-  margin-bottom: 30px;
+  margin-bottom: 27px;
 
   @include tablet {
     margin-bottom: 0;

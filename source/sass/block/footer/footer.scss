@@ -12,6 +12,11 @@
   @include tablet {
     padding: 0;
   }
+
+  @include desktop {
+    width: 1050px;
+    margin: 0 auto;
+  }
 }
 
 .footer__social-list {
@@ -28,11 +33,12 @@
   align-items: center;
 
   @include tablet {
-    width: 218px;
+    width: 223px;
     align-content: center;
     margin: 0;
   }
-  @include desktop{
+
+  @include desktop {
     width: 224px;
   }
 }
@@ -43,14 +49,18 @@
   line-height: 18px;
 }
 
-.footer-dev__logo {
-  color: #63d1bb;
+.footer__dev-svg {
+  color: $acqua;
   padding-top: 0;
 }
 
-.footer-dev__logo:hover {
+.footer__dev-logo:hover .footer__dev-svg {
   color: #46c1ae;
-  padding: 0;
+}
+
+.footer__dev-logo:active .footer__dev-svg {
+  color: #46c1ae;
+  opacity: 0.3;
 }
 
 .footer__wrapper {
@@ -69,5 +79,18 @@
     width: 166px;
     padding-top: 0;
   }
+}
+
+.footer__wrapper-logo svg {
+  color: $black;
+}
+
+.footer__wrapper-logo:hover svg {
+  color: #46c1ae;
+}
+
+.footer__wrapper-logo:active svg {
+  color: #46c1ae;
+  opacity: 0.3;
 }
 

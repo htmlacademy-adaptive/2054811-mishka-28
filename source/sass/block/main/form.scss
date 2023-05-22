@@ -144,11 +144,11 @@
     padding-right: 35px;
     margin-bottom: 29px;
   }
-  @include desktop{
+
+  @include desktop {
     padding-right: 0;
   }
 }
-
 
 .form__legend--additional {
   margin-bottom: 24px;

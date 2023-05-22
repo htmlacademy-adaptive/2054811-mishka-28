@@ -99,3 +99,12 @@
 .checkbox__input:checked + .checkbox__label::after {
   display: block;
 }
+
+.checkbox__input:hover + .checkbox__label::before {
+  border-color: $acqua-dark;
+}
+
+.checkbox__input:active + .checkbox__label::before {
+  border-color: $black;
+  opacity: 0.3;
+}

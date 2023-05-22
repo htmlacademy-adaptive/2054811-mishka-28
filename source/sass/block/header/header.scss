@@ -5,7 +5,6 @@
 
   @include tablet {
     padding: 0;
-    background: #fbfbfb;
   }
 }
 
@@ -44,6 +43,13 @@
 
 
 .header__logo:hover {
+  opacity: 0.6;
+}
+.header__logo:focus {
+
+}
+
+.header__logo:active {
   opacity: 0.3;
 }
 
@@ -53,9 +59,8 @@
   }
 
   @include desktop {
-    min-width: $desktop;
+    width: 1050px;
     margin: 0 auto;
-    padding: 0 50px;
   }
 }
 

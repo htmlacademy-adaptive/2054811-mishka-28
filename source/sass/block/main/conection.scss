@@ -3,6 +3,10 @@
   padding-right: 0;
   padding-bottom: 17px;
   border: 0;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 18px;
+  font-family: "Open Sans";
 
   @include tablet {
     background: $white-gray;
@@ -12,12 +16,6 @@
 .conection .form__legend {
   column-gap: 29px;
   margin-bottom: 5px;
-}
-
-.conection__input::placeholder {
-  font-weight: 400;
-  font-size: 17px;
-  line-height: 18px;
 }
 
 .conection__input-wrapper {
@@ -47,6 +45,17 @@
     margin-right: 0;
   }
 }
-.conection__input--mail{
+
+.conection__input--mail {
   padding-top: 13px;
+}
+
+.conection__input:hover {
+  outline: 0;
+  border-color: #62d1ba;
+}
+
+.conection__input:active {
+  outline: 0;
+  border-color: #62d1ba;
 }

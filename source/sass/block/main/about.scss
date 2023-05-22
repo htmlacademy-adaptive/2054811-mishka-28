@@ -32,8 +32,8 @@
   }
 
   @include desktop {
-    gap: 27px 53px;
-    margin-left: 1px;
+    gap: 28px 56px;
+
   }
 }
 
@@ -46,6 +46,10 @@
     flex-wrap: wrap;
     gap: 28px 40px;
 
+
+  }
+  @include desktop {
+    gap: 28px 56px;
   }
 
 }

@@ -8,8 +8,11 @@
   }
 
   @include desktop {
-    grid-template-columns: 527px 527px;
-    column-gap: 47px;
+    width: 990px;
+    margin: 0 auto;
+    grid-template-columns: 466px 525px;
+    column-gap: 29px;
+    row-gap: 36px;
   }
 }
 
@@ -21,20 +24,20 @@
   @include tablet {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    padding: 94px 50px 0;
+    padding: 61px 50px 0;
     width: 100%;
     grid-column: 1/-1;
   }
 
   @include desktop {
-    width: 1050px;
-    margin: 0 auto;
     grid-column: 1/2;
+    padding: 0;
     padding-top: 80px;
-    grid-template-columns: 1fr;
-    justify-content: end;
+    row-gap: 34px;
+    padding-left: 144px;
   }
 }
+
 
 .contact__container::after {
   @include tablet {
@@ -42,13 +45,13 @@
     content: "";
     background: url("../img/contact/flag.svg");
     right: 53px;
-    top: 69px;
+    top: 38px;
     width: 47px;
     height: 81px;
   }
 
   @include desktop {
-    left: 114px;
+    left: 33px;
     top: 62px;
   }
 }
@@ -60,13 +63,10 @@
     margin-bottom: 48px;
     position: relative;
     grid-column: 1/2;
-    grid-row: 1/2;
+
   }
 
   @include desktop {
-    align-self: end;
-    padding-left: 174px;
-    /* padding-top: 79px; */
     margin: 0;
   }
 }
@@ -86,9 +86,9 @@
 
   @include desktop {
     flex-direction: column;
-    gap: 27px;
-    grid-row: 2/3;
-    margin-left: 176px;
+    gap: 29px;
+    // grid-row: 2/3;
+
     align-self: end;
     min-height: 150px;
   }
@@ -99,18 +99,19 @@
   flex-wrap: wrap;
   align-items: flex-start;
   margin-bottom: 30px;
+  column-gap: 30px;
 
 
   @include tablet {
     min-height: 90px;
     margin-bottom: 0;
+    column-gap: 0;
   }
 
   @include desktop {
     display: flex;
     margin-bottom: 0;
     min-height: 0;
-
   }
 }
 
@@ -152,6 +153,7 @@
     margin-bottom: 0;
     column-gap: 27px;
   }
+
   @include desktop {
     column-gap: 0;
   }
@@ -203,15 +205,16 @@
   position: absolute;
   content: "";
   background: url("../img/contact/map-pin.svg") no-repeat;
-  bottom: 47%;
+  bottom: 46%;
   left: 54%;
   transform: translateX(-50%);
   width: 67px;
   height: 100px;
+  z-index: 1;
 
   @include tablet {
-    bottom: 48%;
-    left: 53%;
+    bottom: 47%;
+    left: 52%;
   }
 }
 
@@ -220,20 +223,18 @@
   margin: 0 auto 39px;
 
   @include tablet {
-    width: 231px;
+    width: 230px;
     margin: 0 auto;
     grid-column: 1/-1;
-    grid-row: 4/5;
     min-width: 230px;
   }
 
   @include desktop {
     grid-column: 1/2;
-    grid-row: 3/4;
-    margin-left: 225px;
     font-size: 17px;
     min-width: 230px;
     min-height: 0;
+    margin-left: 144px;
   }
 }
 
