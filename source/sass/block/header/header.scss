@@ -10,6 +10,10 @@
   @include tablet {
     padding: 0;
   }
+
+  @include desktop {
+    overflow: hidden;
+  }
 }
 
 .header::before {
@@ -23,6 +27,10 @@
     left: 0;
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   }
+
+  @include desktop {
+    display: none;
+  }
 }
 
 .header__container {
@@ -35,7 +43,6 @@
     width: 1050px;
     margin: 0 auto;
     padding: 0;
-    padding-top: 30px;
   }
 }
 
@@ -59,16 +66,10 @@
   }
 }
 
-
 .header__logo:hover {
   opacity: 0.6;
-}
-
-.header__logo:focus {
-
 }
 
 .header__logo:active {
   opacity: 0.3;
 }
-

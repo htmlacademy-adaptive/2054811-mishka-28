@@ -4,6 +4,7 @@
   @include tablet {
     padding: 52px 30px 50px 50px;
   }
+
   @include desktop {
     padding: 0;
   }
@@ -84,8 +85,9 @@
     width: 137px;
     padding-top: 0;
   }
+
   @include desktop {
-    width: 149px ;
+    width: 149px;
   }
 }
 
@@ -101,4 +103,3 @@
   color: #46c1ae;
   opacity: 0.3;
 }
-
