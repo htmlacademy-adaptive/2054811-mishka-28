@@ -1,0 +1,26 @@
+.select-form__list {
+  @include list-reset;
+  padding: 22px 0 30px;
+  display: flex;
+  justify-content: space-between;
+  gap: 9px;
+  width: 260px;
+  margin: 0 auto;
+
+  @include tablet {
+    padding: 0;
+    padding-bottom: 31px;
+    width: 350px;
+  }
+}
+
+.select-form__item {
+  line-height: 16px;
+  width: 85px;
+  min-height: 52px;
+  text-align: center;
+
+  @include tablet {
+    width: 112px;
+  }
+}

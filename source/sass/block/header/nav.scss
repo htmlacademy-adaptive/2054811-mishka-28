@@ -7,6 +7,11 @@
   position: absolute;
   width: 100%;
   background: #ffffff;
+
+  @include tablet {
+    position: relative;
+    background-color: transparent;
+  }
 }
 
 .nav__toggle {
@@ -35,35 +40,27 @@
   display: none;
 }
 
-@media (min-width: $tablet) {
-  .nav--with-js {
-    position: relative;
-    background-color: transparent;
-    // width: 100vw;
+.nav--closed .nav__list,
+.nav__list {
+  @include tablet {
+    display: grid;
+    grid-template-columns: 168px 221px;
+    margin: 0;
+    width: 48%;
   }
 
-  .nav--with-js .nav__toggle,
-  .nav__toggle {
+  @include tablet {
+    display: grid;
+    grid-template-columns: 219px 221px;
+    margin: 0;
+    width: 43%;
+  }
+}
+
+.nav--with-js .nav__toggle,
+.nav__toggle {
+  @include tablet {
     display: none;
   }
-
-  .nav--closed .nav__list,
-  .nav__list {
-    @include tablet {
-      display: grid;
-      grid-template-columns: 167px 152px 84px 298px;
-      margin: 0;
-    }
-  }
 }
 
-@media (min-width: $desktop) {
-  .nav--closed .nav__list,
-  .nav__list {
-    display: grid;
-    grid-template-columns: 220px 183px 298px minmax(82px, auto) minmax(290px, auto);
-
-    margin: 0;
-  }
-
-}

@@ -2,7 +2,7 @@
   @include list-reset;
   display: flex;
   flex-direction: column;
-  gap: 49px;
+  gap: 29px;
 
   @include tablet {
     flex-wrap: wrap;
@@ -26,12 +26,13 @@
   @include desktop {
     width: 316px;
     margin-bottom: 0;
+    flex-direction: column;
   }
 }
 
 .catalog__link {
   @include tablet {
-    padding: 20px;
+    padding-bottom: 19px;
   }
 }
 
@@ -64,7 +65,7 @@
   @include tablet {
     font-size: 20px;
     line-height: 24px;
-    max-width: 264px;
+    max-width: 263px;
   }
 }
 
@@ -80,24 +81,23 @@
   }
 
   @include desktop {
-    margin-bottom: 55px;
+    margin-bottom: 15px;
   }
 }
 
 .catalog__desc-wrapper {
-  padding: 29px 12px 4px 28px;
+  padding: 29px 29px 25px 28px;
 
   @include tablet {
     display: flex;
     flex-direction: column;
     flex-grow: 1;
-    padding: 27px 12px 4px 32px;
+    padding: 27px 30px 4px 32px;
   }
 
   @include desktop {
-    padding: 29px 12px 0px 28px;
+    padding: 29px 31px 0 28px;
     min-height: 197px;
-    row-gap: 5px;
   }
 }
 
@@ -105,6 +105,11 @@
   box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
 }
 
+.catalog__text {
+  @include tablet {
+    flex-grow: 1;
+  }
+}
 
 .catalog__price-wrapper {
   position: relative;
@@ -118,31 +123,32 @@
 
   @include desktop {
     flex-grow: 0;
-    align-items: center;
+    align-items: flex-start;
   }
 }
 
-.catalog__price-wrapper::before {
+.catalog__price::before {
   position: absolute;
   content: "";
   border-bottom: 1px solid $light-gray;
   width: 204px;
   height: 1px;
-  top: -17px;
-  left: 50%;
+  top: -24px;
+  left: 103px;
   transform: translateX(-50%);
 
   @include tablet {
     width: 265px;
-    top: 132px;
+    top: -25px;
   }
 
   @include desktop {
-    top: 10px;
+    top: -27px;
   }
 }
 
 .catalog__price {
+  position: relative;
   font-weight: 700;
   font-size: 15px;
   line-height: 24px;
@@ -151,7 +157,8 @@
     font-size: 17px;
     padding-bottom: 20px;
   }
+
   @include desktop {
-    align-self: center;
+
   }
 }

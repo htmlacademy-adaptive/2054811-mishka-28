@@ -68,7 +68,6 @@
       </nav>
     </div>
   </header>
-
   <main class="main-page">
     <h1 class="visually-hidden">Магазин игрушек ручной работы Мишка</h1>
     <section class="hero main-page__hero">
@@ -76,15 +75,22 @@
         <h2 class="hero__title main-title">Милые штуки ручной работы&nbsp;для дома</h2>
         <ul class="hero__list list">
           <li class="hero__item hero__item--inter">
-            <a href="#" class="hero__link link">Предметы интерьера</a>
+            <a href="#" class="hero__link link">
+              <span class="hero__text">
+                Предметы интерьера
+              </span>
+            </a>
           </li>
           <li class="hero__item hero__item--toy">
-            <a href="#" class="hero__link link">Детские игрушки</a>
+            <a href="#" class="hero__link link">
+              <span class="hero__text">
+                Детские игрушки
+              </span>
+            </a>
           </li>
         </ul>
       </div>
     </section>
-
     <section class="week-product main-page__week-product">
       <div class="week-product__container">
         <div class="week-product__catalog product-catalog">
@@ -305,29 +311,32 @@
       </div>
     </div>
   </footer>
-  <div class="modal-container">
-    <div class="modal-container__wrapper">
-      <h2 class="modal-container__title title">Добавить в&nbsp;корзину</h2>
-      <form action=" https://echo.htmlacademy.ru/" class="modal-container__filter filter" method="get">
-        <fieldset class="filter__group">
-          <legend class="filter__title">Выберите размер:</legend>
-          <ul class="filter__list filter-list list">
-            <li class="filter-list__item filter-list__item--small filter-list__item--active">
-              <label for="s" class="filter-list__label">s </label>
-              <input class="filter-list__input visually-hidden" type="checkbox" name="small" id="s">
+  <div class="modal modal--close">
+    <div class="modal__container">
+      <h2 class="modal__title">Добавить в корзину</h2>
+      <p class="modal__text">Выберите размер:</p>
+      <div class="modal__wrapper">
+        <form class="modal__form select-form" action="https://echo.htmlacademy.ru/" method="post">
+          <ul class="select-form__list">
+            <li class="select-form__item input-modal">
+              <input class="visually-hidden input-modal__input" type="checkbox" name="modal" value="small" id="small"
+                checked>
+              <label class="input-modal__label" for="small"> S </label>
             </li>
-            <li class="filter-list__item filter-list__item--medium">
-              <label for="m" class="filter-list__label">m</label>
-              <input class="filter-list__input visually-hidden" type="checkbox" name="medium" id="m">
+            <li class="select-form__item input-modal">
+              <input class="visually-hidden input-modal__input" type="checkbox" name="modal" value="medium" id="medium">
+              <label class="input-modal__label" for="medium"> M </label>
             </li>
-            <li class="filter-list__item filter-list__item--large">
-              <label for="l" class="filter-list__label">l</label>
-              <input class="filter-list__input visually-hidden" type="checkbox" name="large" id="l">
+            <li class="select-form__item input-modal">
+              <input class="visually-hidden input-modal__input" type="checkbox" name="modal" value="large" id="large">
+              <label class="input-modal__label" for="large"> L </label>
             </li>
           </ul>
-        </fieldset>
-        <a href="#" class="button modal-container__button  link">Добавить</a>
-      </form>
+        </form>
+        <button class="modal__button" type="submit">
+          Добавить
+        </button>
+      </div>
     </div>
   </div>
 
