@@ -13,20 +13,20 @@
   }
 
   @include desktop {
-    padding-left: 34px;
-    margin-bottom: 153px;
+    padding: 56px 34px 96px 41px;
+    margin-bottom: 130px;
   }
 }
 
 .catalog-main__container {
   padding-left: 30px;
   padding-right: 30px;
-  margin-bottom: 53px;
+  margin-bottom: 30px;
 
   @include tablet {
     padding-left: 50px;
     padding-right: 50px;
-    margin-bottom: 50px;
+    margin-bottom: 53px;
   }
 
   @include desktop {

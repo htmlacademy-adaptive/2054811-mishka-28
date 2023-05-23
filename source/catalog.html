@@ -42,9 +42,7 @@
             <a href="#" class="nav-list__link  nav-list__link--icon nav-list__link--search link">
               <svg class="nav-list__svg nav-list__svg--search" xmlns="http://www.w3.org/2000/svg" width="18" height="18"
                 fill="none" viewBox="0 0 18 18">
-                <path fill="currentColor"
-                  d="m17.693 16.057-3.477-3.477c1.023-1.33 1.534-2.966 1.534-4.705C15.75 3.477 12.273 0 7.875 0S0 3.477 0 7.875s3.477 7.875 7.875 7.875c1.739 0 3.375-.614 4.704-1.534l3.478 3.477c.204.205.409.307.818.307.614 0 1.125-.511 1.125-1.125 0-.204-.102-.511-.307-.818ZM2.25 7.875c0-3.068 2.557-5.625 5.625-5.625S13.5 4.807 13.5 7.875 10.943 13.5 7.875 13.5 2.25 10.943 2.25 7.875Z"
-                  opacity=".2" />
+                <use href="./img/sprite.svg#search"></use>
               </svg>
               <span class="nav-list__text">Поиск по сайту</span>
             </a>
@@ -53,9 +51,7 @@
             <a href="#" class="nav-list__link nav-list__link--icon nav-list__link--cart link">
               <svg class="nav-list__svg nav-list__svg--cart" xmlns="http://www.w3.org/2000/svg" width="21" height="18"
                 fill="none" viewBox="0 0 21 18">
-                <path fill="currentColor"
-                  d="M20.188 6.857h-3.55L13.188.381C12.985 0 12.58-.095 12.174.095s-.507.572-.304.953l3.145 5.81H5.783l3.145-5.81c.202-.381 0-.762-.305-.953-.406-.19-.811 0-1.014.286l-3.45 6.476H.812c-.406 0-.812.286-.812.762 0 .381.304.762.812.762h.202l.914 2.857c-.203.095-.305.286-.305.572 0 .38.305.666.71.666L4.058 18h12.884l1.725-5.524c.405 0 .71-.286.71-.667 0-.19-.102-.476-.304-.57l.912-2.858h.203c.406 0 .812-.286.812-.762 0-.476-.406-.762-.812-.762Zm-4.565 9.62H5.073L3.854 12.38h13.087l-1.319 4.095Zm1.623-5.525H3.348l-.812-2.666h15.522l-.812 2.666Z"
-                  opacity=".2" />
+                <use href="./img/sprite.svg#cart"></use>
               </svg>Корзина: пока пуста
             </a>
           </li>
@@ -78,7 +74,6 @@
       <div class="catalog-main__container">
         <ul class="catalog__list">
           <li class="catalog__item ">
-
             <picture>
               <source media="(min-width: 1150px)" type="image/webp"
                 srcset="./img/catalog/photo1-desktop.webp 1x,./img/catalog/photo1-desktop@2x.webp 2x">
@@ -86,7 +81,6 @@
                 srcset="./img/catalog/photo1-tablet.webp 1x,./img/catalog/photo1-tablet@2x.webp 2x">
               <source media="(min-width: 10px)" type="image/webp"
                 srcset="./img/catalog/photo1.webp 1x,./img/catalog/photo1-mobile@2x.webp 2x">
-
               <source media="(min-width: 1150px)"
                 srcset="./img/catalog/photo1-desktop.jpg 1x,./img/catalog/photo1-desktop@2x.jpg 2x">
               <source media="(min-width: 768px)"
@@ -94,19 +88,18 @@
               <img class="catalog__img" src="./img/catalog/photo1.jpg" srcset="./img/catalog/photo1-mobile@2x.jpg"
                 alt=" Вязанный зайка." width="260" height="195">
             </picture>
-
             <div class="catalog__desc-wrapper">
-              <h2 class="catalog__title">Зайчик-попрыгайчик</h2>
-              <p class="catalog__desc">Рост 30 см, вес 200 г</p>
-              <div class=" catalog__price-wrapper">
+              <div class="catalog__text">
+                <h2 class="catalog__title">Зайчик-попрыгайчик</h2>
+                <p class="catalog__desc">Рост 30 см, вес 200 г</p>
+              </div>
+              <div class="catalog__price-wrapper">
                 <span class="catalog__price">1200 руб.</span>
                 <a href="#" class="catalog__link">
                   <span class="visually-hidden">Добавить в корзину</span>
                   <svg class="catalog__svg" xmlns="http://www.w3.org/2000/svg" width="21" height="18" fill="none"
                     viewBox="0 0 21 18">
-                    <path fill="currentColor"
-                      d="M20.188 6.857h-3.55L13.188.381C12.985 0 12.58-.095 12.174.095s-.507.572-.304.953l3.145 5.81H5.783l3.145-5.81c.202-.381 0-.762-.305-.953-.406-.19-.811 0-1.014.286l-3.45 6.476H.812c-.406 0-.812.286-.812.762 0 .381.304.762.812.762h.202l.914 2.857c-.203.095-.305.286-.305.572 0 .38.305.666.71.666L4.058 18h12.884l1.725-5.524c.405 0 .71-.286.71-.667 0-.19-.102-.476-.304-.57l.912-2.858h.203c.406 0 .812-.286.812-.762 0-.476-.406-.762-.812-.762Zm-4.565 9.62H5.073L3.854 12.38h13.087l-1.319 4.095Zm1.623-5.525H3.348l-.812-2.666h15.522l-.812 2.666Z"
-                      opacity=".2" />
+                    <use href="./img/sprite.svg#cart"></use>
                   </svg>
                 </a>
               </div>
@@ -129,17 +122,17 @@
                 srcset="./img/catalog/photo2-mobile@2x.jpg 2x" width="260" height="195">
             </picture>
             <div class="catalog__desc-wrapper">
-              <h2 class="catalog__title">Корзинка для белья</h2>
-              <p class="catalog__desc">Диаметр 15 см, высота 10 см</p>
+              <div class="catalog__text">
+                <h2 class="catalog__title">Корзинка для белья</h2>
+                <p class="catalog__desc">Диаметр 15 см, высота 10 см</p>
+              </div>
               <div class="catalog__price-wrapper">
                 <span class="catalog__price">690 руб.</span>
                 <a href="#" class="catalog__link">
                   <span class="visually-hidden">Добавить в корзину</span>
                   <svg class="catalog__svg" xmlns="http://www.w3.org/2000/svg" width="21" height="18" fill="none"
                     viewBox="0 0 21 18">
-                    <path fill="currentColor"
-                      d="M20.188 6.857h-3.55L13.188.381C12.985 0 12.58-.095 12.174.095s-.507.572-.304.953l3.145 5.81H5.783l3.145-5.81c.202-.381 0-.762-.305-.953-.406-.19-.811 0-1.014.286l-3.45 6.476H.812c-.406 0-.812.286-.812.762 0 .381.304.762.812.762h.202l.914 2.857c-.203.095-.305.286-.305.572 0 .38.305.666.71.666L4.058 18h12.884l1.725-5.524c.405 0 .71-.286.71-.667 0-.19-.102-.476-.304-.57l.912-2.858h.203c.406 0 .812-.286.812-.762 0-.476-.406-.762-.812-.762Zm-4.565 9.62H5.073L3.854 12.38h13.087l-1.319 4.095Zm1.623-5.525H3.348l-.812-2.666h15.522l-.812 2.666Z"
-                      opacity=".2" />
+                    <use href="./img/sprite.svg#cart"></use>
                   </svg>
                 </a>
               </div>
@@ -161,17 +154,17 @@
                 alt="Вязанная корзинка для игрушек." width="260" height="195">
             </picture>
             <div class="catalog__desc-wrapper">
-              <h2 class="catalog__title">Большая корзинка для&nbsp;игрушек</h2>
-              <p class="catalog__desc">Диаметр 30 см, высота 30 см</p>
+              <div class="catalog__text">
+                <h2 class="catalog__title">Большая корзинка для&nbsp;игрушек</h2>
+                <p class="catalog__desc">Диаметр 30 см, высота 30 см</p>
+              </div>
               <div class="catalog__price-wrapper">
                 <span class="catalog__price">1 500 руб.</span>
                 <a href="#" class="catalog__link">
                   <span class="visually-hidden">Добавить в корзину</span>
                   <svg class="catalog__svg" xmlns="http://www.w3.org/2000/svg" width="21" height="18" fill="none"
                     viewBox="0 0 21 18">
-                    <path fill="currentColor"
-                      d="M20.188 6.857h-3.55L13.188.381C12.985 0 12.58-.095 12.174.095s-.507.572-.304.953l3.145 5.81H5.783l3.145-5.81c.202-.381 0-.762-.305-.953-.406-.19-.811 0-1.014.286l-3.45 6.476H.812c-.406 0-.812.286-.812.762 0 .381.304.762.812.762h.202l.914 2.857c-.203.095-.305.286-.305.572 0 .38.305.666.71.666L4.058 18h12.884l1.725-5.524c.405 0 .71-.286.71-.667 0-.19-.102-.476-.304-.57l.912-2.858h.203c.406 0 .812-.286.812-.762 0-.476-.406-.762-.812-.762Zm-4.565 9.62H5.073L3.854 12.38h13.087l-1.319 4.095Zm1.623-5.525H3.348l-.812-2.666h15.522l-.812 2.666Z"
-                      opacity=".2" />
+                    <use href="./img/sprite.svg#cart"></use>
                   </svg>
                 </a>
               </div>
@@ -185,20 +178,20 @@
         <h2 class="process__title">Процесс производства</h2>
         <div class="process__video-wrapper">
           <picture>
-            <source media="(min-width:1150px)" type="image/webp"
-              srcset="./img/video/video-desktop.webp, ./img/video/video-desktop@2x.webp ">
-            <source media="(min-width:768px)" type="image/webp"
-              srcset="./img/video/video-tablet.webp, ./img/video/video-tablet@2x.webp ">
-            <source media="(min-width:10px)" type="image/webp"
-              srcset="./img/video/video-mobile.webp, ./img/video/video-mobile@2x.webp">
-            <source media="(min-width:1150px)"
-              srcset="./img/video/video-desktop.jpg 1x, ./img/video/video-desktop@2x.jpg 2x, ">
-            <source media="(min-width:768px)"
+            <source media="(min-width: 1150px)" type="image/webp"
+              srcset="./img/video/video-desktop.webp 1x, ./img/video/video-desktop@2x.webp 2x ">
+            <source media="(min-width: 768px)" type="image/webp"
+              srcset="./img/video/video-tablet.webp 1x, ./img/video/video-tablet@2x.webp 2x ">
+            <source media="(min-width: 10px)" type="image/webp"
+              srcset="./img/video/video-mobile.webp 1x, ./img/video/video-mobile@2x.webp 2x">
+            <source media="(min-width: 1150px)"
+              srcset="./img/video/video-desktop.jpg 1x, ./img/video/video-desktop@2x.jpg 2x ">
+            <source media="(min-width: 768px)"
               srcset="./img/video/video-tablet.jpg 1x, ./img/video/video-tablet@2x.jpg 2x">
             <img class="process__video" src="./img/" alt="Видео процесса производства корзинок." width="260"
               height="150" srcset="./img/video/video-mobile@2x.jpg 2x">
           </picture>
-          <button class="process__button--play">
+          <button class="process__button process__button--play">
             <span class="visually-hidden">Воспроизвести видео </span>
           </button>
         </div>

@@ -4,6 +4,9 @@
   @include tablet {
     padding: 52px 30px 50px 50px;
   }
+  @include desktop {
+    padding: 0;
+  }
 }
 
 .footer__container {
@@ -16,6 +19,8 @@
   @include desktop {
     width: 1050px;
     margin: 0 auto;
+    padding-top: 54px;
+    padding-bottom: 57px;
   }
 }
 
@@ -39,7 +44,7 @@
   }
 
   @include desktop {
-    width: 224px;
+    width: 189px;
   }
 }
 
@@ -76,8 +81,11 @@
 
   @include tablet {
     display: block;
-    width: 166px;
+    width: 137px;
     padding-top: 0;
+  }
+  @include desktop {
+    width: 149px ;
   }
 }
 

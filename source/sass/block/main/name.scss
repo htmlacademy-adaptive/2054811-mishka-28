@@ -27,6 +27,9 @@
 
   @include desktop {
     width: 86%;
+    margin-bottom: 0;
+    align-items: baseline;
+
   }
 }
 
@@ -61,6 +64,10 @@
     font-size: 19px;
     line-height: 18px;
     padding-left: 17px;
+  }
+  @include desktop {
+    padding-bottom: 15px;
+    padding-top: 31px;
   }
 }
 

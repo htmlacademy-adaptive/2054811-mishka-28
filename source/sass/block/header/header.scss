@@ -1,7 +1,11 @@
 .header {
   position: relative;
   padding-top: 79px;
-  z-index: 10;
+  z-index: 30;
+
+  @include tablet {
+    padding-top: 87px;
+  }
 
   @include tablet {
     padding: 0;
@@ -18,6 +22,20 @@
     top: 0;
     left: 0;
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }
+}
+
+.header__container {
+  @include tablet {
+    padding: 0 50px;
+    padding-top: 88px;
+  }
+
+  @include desktop {
+    width: 1050px;
+    margin: 0 auto;
+    padding: 0;
+    padding-top: 30px;
   }
 }
 
@@ -45,22 +63,12 @@
 .header__logo:hover {
   opacity: 0.6;
 }
+
 .header__logo:focus {
 
 }
 
 .header__logo:active {
   opacity: 0.3;
-}
-
-.header__container {
-  @include tablet {
-    padding: 0 50px;
-  }
-
-  @include desktop {
-    width: 1050px;
-    margin: 0 auto;
-  }
 }
 

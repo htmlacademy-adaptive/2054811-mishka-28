@@ -20,6 +20,7 @@
     bottom: -11px;
     left: 0;
     background-position-x: center;
+    z-index: 20;
   }
 
   @include desktop {
@@ -91,6 +92,7 @@
   width: 100%;
   margin: 0 auto;
   position: relative;
+  z-index: 10;
 
   @include tablet {
     display: flex;
@@ -109,27 +111,33 @@
 
   @include tablet {
     width: 50%;
+
+    // &:hover {
+    //   transform: translateY(-5px);
+
+    // }
+    &:focus {}
+
+    &:active {}
+
+
+    &--toy:hover {
+      background: #46c1ae;
+    }
+
+    &--inter:hover {
+      background: #59d5bc;
+    }
+
   }
 }
 
-.hero__item:hover {
-  transform: translateY(-5px);
-
-}
-.hero__item:focus {
-
-}
-.hero__item:active{
-
-}
-
-.hero__item--inter {
-  background-color: #63d1bb;
-}
-
-.hero__item--inter::after {
-  position: absolute;
+.hero__item .hero__link::after {
   content: " ";
+  position: absolute;
+}
+
+.hero__item--inter .hero__link::after {
   background-image: url("../img/hero/lamp.svg");
   top: 24px;
   right: 35px;
@@ -142,13 +150,7 @@
   }
 }
 
-.hero__item--toy {
-  background-color: #56c3b2;
-}
-
-.hero__item--toy::after {
-  position: absolute;
-  content: " ";
+.hero__item--toy .hero__link::after {
   background-image: url("../img/hero/lego.svg");
   top: 22px;
   right: 27px;
@@ -169,6 +171,8 @@
   padding: 25px 160px 31px 30px;
   min-height: 103px;
 
+
+
   @include tablet {
     font-size: 20px;
     line-height: 30px;
@@ -181,16 +185,47 @@
   }
 }
 
-.hero__item--toy:hover {
-  background: #46c1ae;
+.hero__link::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
 }
 
-.hero__item--inter:hover {
-  background: #59d5bc;
+.hero__link:hover::before {
+  @include tablet {
+    height: calc(100% + 5px);
+  }
 }
 
-
-.hero__link:hover {
-  padding-top: 21px;
+.hero__item--inter .hero__link::before {
+  background-color: #63d1bb;
 }
 
+.hero__item--toy .hero__link::before {
+  background-color: #56c3b2;
+}
+
+.hero__text {
+  position: relative;
+  z-index: 5;
+
+  @include desktop {
+    display: block;
+    width: 138px;
+  }
+}
+
+.hero__link:hover .hero__text {
+  @include tablet {
+    transform: translateY(-5px);
+  }
+}
+
+.hero__item .hero__link:hover::after {
+  @include tablet {
+    transform: translateY(-5px);
+  }
+}

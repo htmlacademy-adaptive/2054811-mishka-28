@@ -6,12 +6,13 @@
   width: 100%;
   resize: none;
   border: 2px solid $light-black;
-  font-family: "Open Sans";
+  font-family: "Open Sans", sans-serif;
   font-size: 17px;
   line-height: 18px;
+
   @include tablet {
     font-size: 19px;
-line-height: 18px;
+    line-height: 18px;
   }
 
   @include desktop {
@@ -19,5 +20,7 @@ line-height: 18px;
   }
 }
 
-
-
+.textarea__textarea:hover,
+.textarea__textarea:active {
+  border: 2px solid $acqua-dark;
+}
