@@ -11,11 +11,3 @@ nav.classList.add('nav--closed');
 navButton.addEventListener('click', function () {
   nav.classList.toggle('nav--closed');
 });
-//slider
-
-// sliderList.classList.add('slider-list__item--active');
-
-// sliderBtnPrev.addEventListener('click', function () {
-//   sliderBtnPrev.classList.toggle('slider-list__item--active');
-// });
-

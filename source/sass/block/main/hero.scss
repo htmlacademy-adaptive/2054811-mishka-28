@@ -112,15 +112,6 @@
   @include tablet {
     width: 50%;
 
-    // &:hover {
-    //   transform: translateY(-5px);
-
-    // }
-    &:focus {}
-
-    &:active {}
-
-
     &--toy:hover {
       background: #46c1ae;
     }
@@ -128,7 +119,6 @@
     &--inter:hover {
       background: #59d5bc;
     }
-
   }
 }
 
@@ -170,8 +160,6 @@
   line-height: 24px;
   padding: 25px 160px 31px 30px;
   min-height: 103px;
-
-
 
   @include tablet {
     font-size: 20px;
