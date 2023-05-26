@@ -1,12 +1,11 @@
 //text-aria//
-
 .textarea__textarea {
-  padding: 17px;
+  padding: 15px;
   height: 142px;
   width: 100%;
   resize: none;
   border: 2px solid $light-black;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Open Sans", "Arial", sans-serif;
   font-size: 17px;
   line-height: 18px;
 
@@ -16,11 +15,16 @@
   }
 
   @include desktop {
-    width: 80%;
+    width: 700px;
   }
 }
 
 .textarea__textarea:hover,
 .textarea__textarea:active {
+  border: 2px solid $acqua-dark;
+}
+
+.textarea__textarea:focus {
+  outline: none;
   border: 2px solid $acqua-dark;
 }

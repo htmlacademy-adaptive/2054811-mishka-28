@@ -5,8 +5,15 @@
 .name__list {
   @include list-reset;
 
+  @include tablet {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+
   @include desktop {
     width: 100%;
+    gap: 7px;
   }
 }
 
@@ -39,36 +46,39 @@
   }
 }
 
-.form__label--name {
-  padding-left: 0;
-}
-
 .name__input {
-  padding-top: 18px;
+  padding-top: 14px;
   padding-right: 0;
-  padding-bottom: 15px;
+  padding-bottom: 16px;
   border-bottom: 2px solid $light-black;
   border-top: transparent;
   border-left: transparent;
   border-right: transparent;
   width: 100%;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 17px;
+  line-height: 18px;
 
   @include tablet {
     font-weight: 400;
     font-size: 19px;
-    line-height: 18px;
     padding-left: 17px;
+    padding-top: 15px;
+    padding-bottom: 14px;
   }
 
   @include desktop {
-    padding-bottom: 15px;
-    padding-top: 31px;
+    padding-bottom: 12px;
+    padding-top: 29px;
   }
 }
 
 .name__input:hover,
 .name__input:active {
-  outline: 0;
-  border-color: #62d1ba;
+  border-color: $acqua-dark;
+}
+
+.name__input:focus {
+  outline: none;
+  border-color: $acqua-dark;
 }

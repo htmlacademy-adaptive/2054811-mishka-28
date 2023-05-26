@@ -16,7 +16,8 @@
   }
 }
 
-.button:hover {
+.button:hover,
+.button:focus {
   background: $light-black;
   color: $white;
 }

@@ -49,9 +49,9 @@
     width: 48%;
   }
 
-  @include tablet {
+  @include desktop {
     display: grid;
-    grid-template-columns: 219px 221px;
+    grid-template-columns: 220px 221px;
     margin: 0;
     width: 43%;
   }

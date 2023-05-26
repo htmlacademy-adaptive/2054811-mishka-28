@@ -140,6 +140,7 @@
   @include tablet {
     width: 265px;
     top: -25px;
+    left: 138px;
   }
 
   @include desktop {
@@ -156,9 +157,5 @@
   @include tablet {
     font-size: 17px;
     padding-bottom: 20px;
-  }
-
-  @include desktop {
-
   }
 }

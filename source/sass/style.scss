@@ -1,59 +1,40 @@
-// Начните писать стили здесь
 
-//helper//
-@import "./helper/visually-hidden.scss";
-@import "./helper/fonts.scss";
-@import "./helper/variables.scss";
-@import "./helper/mixin.scss";
-@import "./helper/global.scss";
-@import "./helper/link.scss";
-@import "./helper/main-title.scss";
-@import "./helper/title.scss";
-@import "./helper/title-secondary.scss";
-@import "./helper/button.scss";
+@import "./block/helper/visually-hidden.scss";
+@import "./block/helper/fonts.scss";
+@import "./block/helper/variables.scss";
+@import "./block/helper/mixin.scss";
+@import "./block/helper/global.scss";
+@import "./block/helper/link.scss";
+@import "./block/helper/main-title.scss";
+@import "./block/helper/title.scss";
+@import "./block/helper/title-secondary.scss";
+@import "./block/helper/button.scss";
 @import "./block/body-page.scss";
 @import "./block/main/radio.scss";
 @import "./block/main/checkbox.scss";
 @import "./block/main/name.scss";
 @import "./block/main/conection.scss";
 @import "./block/main/textarea.scss";
-
-//header//
 @import "./block/header/header.scss";
 @import "./block/header/nav-list.scss";
 @import "./block/header/nav-button.scss";
 @import "./block/header/nav.scss";
-
-// main-page //
 @import "./block/main/main-page.scss";
-// hero //
 @import "./block/main/hero.scss";
-
-
-// week-product //
 @import "./block/main/week-product.scss";
 @import "./block/main/product-catalog.scss";
 @import "./block/main/measuare.scss";
-
-// about //
 @import "./block/main/about.scss";
-//review//
 @import "./block/main/review.scss";
 @import "./block/main/slider-list.scss";
 @import "./block/main/contact.scss";
-// modal-container
 @import "./block/main/modal-container.scss";
 @import "./block/main/filter.scss";
-// footer //
 @import "./block/footer/footer.scss";
 @import "./block/footer/social-list.scss";
-
-// FORM //
 @import "./block/main/main-form.scss";
 @import "./block/main/hero-form.scss";
 @import "./block/main/form.scss";
-
-// catalog
 @import "./block/main/catalog.scss";
 @import "./block/main/catalog-main.scss";
 @import "./block/main/process.scss";

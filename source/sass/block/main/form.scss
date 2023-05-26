@@ -7,10 +7,6 @@
 }
 
 .form__container {
-  @include tablet {
-    padding-top: 68px;
-  }
-
   @include desktop {
     width: 1050px;
     margin: 0 auto;
@@ -22,21 +18,19 @@
   position: relative;
   font-size: 13px;
   line-height: 24px;
-  margin-bottom: 30px;
+  margin-bottom: 17px;
 
   @include tablet {
-    margin-bottom: 68px;
     font-size: 17px;
     line-height: 30px;
-    padding-left: 50px;
-    padding-right: 50px;
+    padding: 68px 50px 69px 50px;
+    margin-bottom: 0;
   }
 
   @include desktop {
     width: 737px;
-    padding: 120px 9px 0 21px;
-    margin: 0px auto 67px;
-
+    padding: 120px 9px 0 19px;
+    margin: 0 auto 67px;
   }
 }
 
@@ -54,7 +48,7 @@
 
   @include desktop {
     padding: 0;
-    width: 920px;
+    width: 925px;
     margin: 0 auto 17px;
   }
 }
@@ -72,13 +66,13 @@
 
   @include tablet {
     padding-top: 44px;
-    padding-bottom: 23px;
+    padding-bottom: 33px;
     margin-bottom: 0;
   }
 
-  @include desktop  {
+  @include desktop {
     padding-bottom: 50px;
-    padding-top: 37px;
+    padding-top: 35px;
   }
 }
 
@@ -140,7 +134,19 @@
   @include tablet {
     background-color: $white-gray;
     padding-top: 50px;
-    padding-bottom: 50px;
+    padding-bottom: 53px;
+  }
+}
+
+.form__bg--conection {
+  @include tablet {
+    padding-top: 41px;
+    padding-bottom: 47px;
+  }
+
+  @include desktop {
+    padding-top: 51px;
+    padding-bottom: 51px;
   }
 }
 
@@ -149,21 +155,22 @@
 }
 
 .form__fieldset--conection {
-  margin-bottom: 25px;
+  margin-bottom: 35px;
 
   @include tablet {
     padding-right: 51px;
-    margin-bottom: 20px;
+    margin-bottom: 9px;
   }
 
   @include desktop {
     padding-right: 0;
-    margin-bottom: 23px;
+    margin-bottom: 15px;
   }
 }
 
 .form__legend--additional {
   margin-bottom: 24px;
+  padding-top: 20px;
 }
 
 .form__legend--radio {
@@ -171,28 +178,32 @@
 }
 
 .form__fieldset--mail {
-
-  margin-bottom: 33px;
+  margin-bottom: 13px;
 
   @include tablet {
     margin-bottom: 0;
   }
 }
-.form__legend--name {@include desktop {
+
+.form__legend--name {
+  @include desktop {
     padding-top: 36px;
   }
-
 }
-.form__legend--tel {
-  @include desktop{
-    padding-top: 17px;
 
+.form__legend--tel {
+  @include desktop {
+    padding-top: 17px;
   }
 }
-.form__legend--email {
-  @include desktop{
-    padding-top: 17px;
 
+.form__legend--email {
+  @include tablet {
+    padding-top: 31px;
+  }
+
+  @include desktop {
+    padding-top: 28px;
   }
 }
 
@@ -200,17 +211,17 @@
   margin-bottom: 10px;
 
   @include tablet {
-    padding-top: 41px;
+    padding-top: 50px;
     padding-right: 51px;
     margin-bottom: 0;
   }
 
   @include desktop {
     padding-top: 48px;
-    margin-bottom: 53px;
-
+    margin-bottom: 50px;
   }
 }
+
 //desc
 .form-desctiption {
   margin-top: 0;
@@ -223,9 +234,6 @@
     font-size: 17px;
     line-height: 30px;
     padding-top: 10px;
-  }
-  @include desktop {
-
   }
 }
 
@@ -254,14 +262,17 @@
     justify-content: space-between;
     padding-left: 50px;
     padding-right: 51px;
-    padding-top: 45px;
+    padding-top: 55px;
     width: 100%;
   }
 
   @include desktop {
-    width: 703px;
+    width: 700px;
     margin: 0 auto;
     padding: 0;
-
   }
+}
+
+.form__label--name {
+  padding-left: 0;
 }

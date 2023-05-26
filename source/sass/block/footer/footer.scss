@@ -33,14 +33,14 @@
   display: flex;
   flex-wrap: wrap;
   width: 220px;
-  column-gap: 26px;
+  column-gap: 28px;
   margin: 0 auto;
   justify-content: center;
-  align-items: center;
+  align-items: start;
 
   @include tablet {
     width: 223px;
-    align-content: center;
+    align-items: start;
     margin: 0;
   }
 
@@ -53,6 +53,11 @@
   font-weight: 700;
   font-size: 19px;
   line-height: 18px;
+  padding-top: 8px;
+
+  @include tablet {
+    padding-top: 9px;
+  }
 }
 
 .footer__dev-svg {
