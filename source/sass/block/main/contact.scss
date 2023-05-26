@@ -38,7 +38,6 @@
   }
 }
 
-
 .contact__container::after {
   @include tablet {
     position: absolute;
@@ -63,14 +62,12 @@
     margin-bottom: 48px;
     position: relative;
     grid-column: 1/2;
-
   }
 
   @include desktop {
     margin: 0;
   }
 }
-
 
 .contact__main-wrapper {
   @include tablet {
@@ -87,8 +84,6 @@
   @include desktop {
     flex-direction: column;
     gap: 29px;
-    // grid-row: 2/3;
-
     align-self: end;
     min-height: 150px;
   }
@@ -100,7 +95,6 @@
   align-items: flex-start;
   margin-bottom: 30px;
   column-gap: 30px;
-
 
   @include tablet {
     min-height: 90px;
@@ -130,15 +124,11 @@
 .contact__email-link {
   font-size: 14px;
   line-height: 28px;
-  border-bottom: 1px solid #62d1ba;
+  border-bottom: 1px solid $acqua-dark;
 
   @include tablet {
     font-size: 17px;
     line-height: 30px;
-  }
-
-  @include desktop {
-
   }
 }
 
@@ -160,15 +150,14 @@
 }
 
 .contact__address {
+  font-style: normal;
   font-size: 14px;
   line-height: 30px;
   width: 183px;
 
   @include tablet {
-    font-style: normal;
     font-size: 17px;
     line-height: 30px;
-
     width: 222px;
   }
 

@@ -79,8 +79,7 @@
 }
 
 .week-product__description {
-  margin-right: auto;
-  margin-bottom: 17px;
+  margin-right: 13px;
   font-size: 17px;
   text-align: left;
   text-transform: uppercase;
@@ -88,7 +87,7 @@
   @include tablet {
     width: 100px;
     margin-left: auto;
-    margin-right: 16px;
+    margin-right: 14px;
     line-height: 17px;
     text-align: center;
     padding-top: 4px;
@@ -116,28 +115,27 @@
   }
 
   @include desktop {
-
     top: 19px;
     right: 0;
   }
 }
 
-@include tablet {
-  .week-product__title-wrapper {
-    display: flex;
-    margin-bottom: 33px;
-    align-content: flex-start;
-    flex-wrap: wrap;
-  }
-}
-
-@include tablet {
-  .week-product__catalog {
+.week-product__catalog {
+  @include tablet {
     position: relative;
   }
 }
 
 .week-product__title-wrapper {
+  margin-bottom: 16px;
+
+  @include tablet {
+    display: flex;
+    margin-bottom: 36px;
+    align-content: flex-start;
+    flex-wrap: wrap;
+  }
+
   @include desktop {
     padding: 80px 0 0 32px;
     align-items: center;

@@ -2,7 +2,7 @@
   display: flex;
   min-height: 100vh;
   flex-direction: column;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Open Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
@@ -11,8 +11,7 @@
 }
 
 .body-page__header {
-  background: #f1f1f1;
-
+  background: $white-gray;
 }
 
 .body-page--index .body-page__header {
@@ -23,17 +22,15 @@
 
 .body-page__title {
   @include tablet {
-    background: #f1f1f1;
+    background: $white-gray;
   }
 }
 
-
-.body-page--index  .body-page__title {
+.body-page--index .body-page__title {
   @include tablet {
     background: none;
   }
 }
-
 
 @media (min-width: $tablet) {
   .body-page {

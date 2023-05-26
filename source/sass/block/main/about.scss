@@ -33,7 +33,6 @@
 
   @include desktop {
     gap: 28px 56px;
-
   }
 }
 
@@ -45,13 +44,11 @@
     display: flex;
     flex-wrap: wrap;
     gap: 28px 40px;
-
-
   }
+
   @include desktop {
     gap: 28px 56px;
   }
-
 }
 
 .about__item {
@@ -126,8 +123,6 @@
   top: -52px;
   left: 2px;
 }
-
-//tablet//
 
 .about__item--eco {
   @include tablet {
